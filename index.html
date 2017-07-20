@@ -6,7 +6,6 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
-  <link rel="stylesheet" type="text/css" href="css/swiper.css">
   <title>12 Вартових</title>
   <script>
     // Picture element HTML5 shiv
@@ -275,37 +274,37 @@
       </div>
 
       <section class="container  pagination">
-        <div class="pagination__numbers">
-          <a class="active-link" href="">1</a>
-          <a class="pagination__link-dash"></a>
-          <a class="active-link" href="">2</a>
-          <a class="pagination__link-dash"></a>
-          <a href="">3</a>
-          <a class="pagination__link-dash"></a>
-          <a href="">4</a>
-          <a class="pagination__link-dash"></a>
-          <a href="">5</a>
-          <a class="pagination__link-dash"></a>
-          <a href="">6</a>
-          <a class="pagination__link-dash"></a>
-          <a href="">7</a>
-          <a class="pagination__link-dash"></a>
-          <a class="pagination__link  pagination__link--white" href="">8</a>
-          <a class="pagination__link-dash  pagination__link-dash--white"></a>
-          <a class="pagination__link  pagination__link--white" href="">9</a>
-          <a class="pagination__link-dash  pagination__link-dash--white"></a>
-          <a class="pagination__link  pagination__link--white" href="">10</a>
-          <a class="pagination__link-dash  pagination__link-dash--white"></a>
-          <a class="pagination__link  pagination__link--white" href="">11</a>
-          <a class="pagination__link-dash  pagination__link-dash--white"></a>
-          <a class="pagination__link  pagination__link--white" href="">12</a>
+        <div class="pagination__numbers  swiper-pagination-main">
+          <!-- <div class="active-link  swiper-pagination-bullet">1</div>
+          <div class="pagination__link-dash"></div>
+          <div class="active-link  swiper-pagination-bullet">2</div>
+          <div class="pagination__link-dash"></div>
+          <div class="swiper-pagination-bullet">3</div>
+          <div class="pagination__link-dash"></div>
+          <div class="swiper-pagination-bullet" >4</div>
+          <div class="pagination__link-dash"></div>
+          <div class="swiper-pagination-bullet" >5</div>
+          <div class="pagination__link-dash"></div>
+          <div class="swiper-pagination-bullet">6</div>
+          <div class="pagination__link-dash"></div>
+          <div class="swiper-pagination-bullet">7</div>
+          <div class="pagination__link-dash"></div>
+          <div class="pagination__link  pagination__link--white  swiper-pagination-bullet">8</div>
+          <div class="pagination__link-dash  pagination__link-dash--white"></div>
+          <div class="pagination__link  pagination__link--white  swiper-pagination-bullet">9</div>
+          <div class="pagination__link-dash  pagination__link-dash--white"></div>
+          <div class="pagination__link  pagination__link--white  swiper-pagination-bullet">10</div>
+          <div class="pagination__link-dash  pagination__link-dash--white"></div>
+          <div class="pagination__link  pagination__link--white  swiper-pagination-bullet">11</div>
+          <div class="pagination__link-dash  pagination__link-dash--white"></div>
+          <div class="pagination__link  pagination__link--white  swiper-pagination-bullet">12</div> -->
         </div>
       </section>
 
-      <article class="main-slider">
-        <div class="main-slider__slides">
+      <article class="main-slider  swiper-container-main">
+        <div class="main-slider__slides  swiper-wrapper">
 
-          <section class="main-slider__slide">
+          <section class="main-slider__slide  swiper-slide">
             <h4 class="visually-hidden">Слайд</h4>
             <span class="main-slider__slide-num">1.</span>
             <picture>
@@ -322,7 +321,7 @@
             </div>
           </section>
 
-          <section class="main-slider__slide">
+          <section class="main-slider__slide  swiper-slide">
             <h4 class="visually-hidden">Слайд</h4>
             <span class="main-slider__slide-num">2.</span>
             <picture>
@@ -338,6 +337,177 @@
               <a href="" class="read-more-link  read-more-link--slider  read-more-link--slider-right">детальніше</a>
             </div>
           </section>
+
+          <section class="main-slider__slide  swiper-slide">
+            <h4 class="visually-hidden">Слайд</h4>
+            <span class="main-slider__slide-num">3.</span>
+            <picture>
+              <source media="(min-width: 1280px)"
+              srcset="img/teresch-castle-dt.jpg">
+              <source media="(min-width: 767px)"
+              srcset="img/teresch-castle-tab.jpg">
+              <img class="main-slider__slide-img" src="img/teresch-castle-m.jpg" alt="photo" width="250" height="157">
+            </picture>
+            <div class="main-slider__slide-text-wrapper">
+              <h3 class="main-slider__slide-title">Замок Терещенко</h3>
+              <span class="main-slider__slide-location">Житомирська область</span>
+              <a href="" class="read-more-link  read-more-link--slider">детальніше</a>
+            </div>
+          </section>
+
+          <section class="main-slider__slide  swiper-slide">
+            <h4 class="visually-hidden">Слайд</h4>
+            <span class="main-slider__slide-num">4.</span>
+            <picture>
+              <source media="(min-width: 1280px)"
+              srcset="img/solov-mon-dt.jpg">
+              <source media="(min-width: 767px)"
+              srcset="img/solov-mon-tab.jpg">
+              <img class="main-slider__slide-img" src="img/solov-mon-m.jpg" alt="photo" width="250" height="157">
+            </picture>
+            <div class="main-slider__slide-text-wrapper">
+              <h3 class="main-slider__slide-title">Соловецький монастир</h3>
+              <span class="main-slider__slide-location">Тернопільська область</span>
+              <a href="" class="read-more-link  read-more-link--slider  read-more-link--slider-right">детальніше</a>
+            </div>
+          </section>
+
+          <section class="main-slider__slide  swiper-slide">
+            <h4 class="visually-hidden">Слайд</h4>
+            <span class="main-slider__slide-num">5.</span>
+            <picture>
+              <source media="(min-width: 1280px)"
+              srcset="img/teresch-castle-dt.jpg">
+              <source media="(min-width: 767px)"
+              srcset="img/teresch-castle-tab.jpg">
+              <img class="main-slider__slide-img" src="img/teresch-castle-m.jpg" alt="photo" width="250" height="157">
+            </picture>
+            <div class="main-slider__slide-text-wrapper">
+              <h3 class="main-slider__slide-title">Замок Терещенко</h3>
+              <span class="main-slider__slide-location">Житомирська область</span>
+              <a href="" class="read-more-link  read-more-link--slider">детальніше</a>
+            </div>
+          </section>
+
+          <section class="main-slider__slide  swiper-slide">
+            <h4 class="visually-hidden">Слайд</h4>
+            <span class="main-slider__slide-num">6.</span>
+            <picture>
+              <source media="(min-width: 1280px)"
+              srcset="img/solov-mon-dt.jpg">
+              <source media="(min-width: 767px)"
+              srcset="img/solov-mon-tab.jpg">
+              <img class="main-slider__slide-img" src="img/solov-mon-m.jpg" alt="photo" width="250" height="157">
+            </picture>
+            <div class="main-slider__slide-text-wrapper">
+              <h3 class="main-slider__slide-title">Соловецький монастир</h3>
+              <span class="main-slider__slide-location">Тернопільська область</span>
+              <a href="" class="read-more-link  read-more-link--slider  read-more-link--slider-right">детальніше</a>
+            </div>
+          </section>
+
+          <section class="main-slider__slide  swiper-slide">
+            <h4 class="visually-hidden">Слайд</h4>
+            <span class="main-slider__slide-num">7.</span>
+            <picture>
+              <source media="(min-width: 1280px)"
+              srcset="img/teresch-castle-dt.jpg">
+              <source media="(min-width: 767px)"
+              srcset="img/teresch-castle-tab.jpg">
+              <img class="main-slider__slide-img" src="img/teresch-castle-m.jpg" alt="photo" width="250" height="157">
+            </picture>
+            <div class="main-slider__slide-text-wrapper">
+              <h3 class="main-slider__slide-title">Замок Терещенко</h3>
+              <span class="main-slider__slide-location">Житомирська область</span>
+              <a href="" class="read-more-link  read-more-link--slider">детальніше</a>
+            </div>
+          </section>
+
+          <section class="main-slider__slide  swiper-slide">
+            <h4 class="visually-hidden">Слайд</h4>
+            <span class="main-slider__slide-num">8.</span>
+            <picture>
+              <source media="(min-width: 1280px)"
+              srcset="img/solov-mon-dt.jpg">
+              <source media="(min-width: 767px)"
+              srcset="img/solov-mon-tab.jpg">
+              <img class="main-slider__slide-img" src="img/solov-mon-m.jpg" alt="photo" width="250" height="157">
+            </picture>
+            <div class="main-slider__slide-text-wrapper">
+              <h3 class="main-slider__slide-title">Соловецький монастир</h3>
+              <span class="main-slider__slide-location">Тернопільська область</span>
+              <a href="" class="read-more-link  read-more-link--slider  read-more-link--slider-right">детальніше</a>
+            </div>
+          </section>
+
+          <section class="main-slider__slide  swiper-slide">
+            <h4 class="visually-hidden">Слайд</h4>
+            <span class="main-slider__slide-num">9.</span>
+            <picture>
+              <source media="(min-width: 1280px)"
+              srcset="img/teresch-castle-dt.jpg">
+              <source media="(min-width: 767px)"
+              srcset="img/teresch-castle-tab.jpg">
+              <img class="main-slider__slide-img" src="img/teresch-castle-m.jpg" alt="photo" width="250" height="157">
+            </picture>
+            <div class="main-slider__slide-text-wrapper">
+              <h3 class="main-slider__slide-title">Замок Терещенко</h3>
+              <span class="main-slider__slide-location">Житомирська область</span>
+              <a href="" class="read-more-link  read-more-link--slider">детальніше</a>
+            </div>
+          </section>
+
+          <section class="main-slider__slide  swiper-slide">
+            <h4 class="visually-hidden">Слайд</h4>
+            <span class="main-slider__slide-num">10.</span>
+            <picture>
+              <source media="(min-width: 1280px)"
+              srcset="img/solov-mon-dt.jpg">
+              <source media="(min-width: 767px)"
+              srcset="img/solov-mon-tab.jpg">
+              <img class="main-slider__slide-img" src="img/solov-mon-m.jpg" alt="photo" width="250" height="157">
+            </picture>
+            <div class="main-slider__slide-text-wrapper">
+              <h3 class="main-slider__slide-title">Соловецький монастир</h3>
+              <span class="main-slider__slide-location">Тернопільська область</span>
+              <a href="" class="read-more-link  read-more-link--slider  read-more-link--slider-right">детальніше</a>
+            </div>
+          </section>
+
+          <section class="main-slider__slide  swiper-slide">
+            <h4 class="visually-hidden">Слайд</h4>
+            <span class="main-slider__slide-num">11.</span>
+            <picture>
+              <source media="(min-width: 1280px)"
+              srcset="img/teresch-castle-dt.jpg">
+              <source media="(min-width: 767px)"
+              srcset="img/teresch-castle-tab.jpg">
+              <img class="main-slider__slide-img" src="img/teresch-castle-m.jpg" alt="photo" width="250" height="157">
+            </picture>
+            <div class="main-slider__slide-text-wrapper">
+              <h3 class="main-slider__slide-title">Замок Терещенко</h3>
+              <span class="main-slider__slide-location">Житомирська область</span>
+              <a href="" class="read-more-link  read-more-link--slider">детальніше</a>
+            </div>
+          </section>
+
+          <section class="main-slider__slide  swiper-slide">
+            <h4 class="visually-hidden">Слайд</h4>
+            <span class="main-slider__slide-num">12.</span>
+            <picture>
+              <source media="(min-width: 1280px)"
+              srcset="img/solov-mon-dt.jpg">
+              <source media="(min-width: 767px)"
+              srcset="img/solov-mon-tab.jpg">
+              <img class="main-slider__slide-img" src="img/solov-mon-m.jpg" alt="photo" width="250" height="157">
+            </picture>
+            <div class="main-slider__slide-text-wrapper">
+              <h3 class="main-slider__slide-title">Соловецький монастир</h3>
+              <span class="main-slider__slide-location">Тернопільська область</span>
+              <a href="" class="read-more-link  read-more-link--slider  read-more-link--slider-right">детальніше</a>
+            </div>
+          </section>
+
         </div>
       </article>
 
@@ -345,50 +515,89 @@
 
   </div>
 
-  <article class="last-news  swiper-container">
+  <div class="last-news__wrapper">
     <h2 class="last-news__title">Останні новини</h2>
 
-    <div class="last-news__slides-wrapper  swiper-wrapper">
+    <article class="last-news  swiper-container">
 
-      <section class="last-news__slide swiper-slide">
-        <picture>
-          <source media="(min-width: 1280px)"
-                srcset="img/news-01-dt.jpg">
-          <img src="img/news-01-m.jpg" alt="photo" width="275" height="189">
-        </picture>
-        <div class="last-news__text">
-          <h3 class="last-news__slide-title">ВАРТОВИМИ ЧАСУ ТА ЦЕГЛИН</h3>
-          <p>Людьми, які живуть ними. Відновлюють за власний кошт. Віддають останнє.</p>
-        </div>
-      </section>
+      <div class="last-news__slides-wrapper  swiper-wrapper">
 
-      <section class="last-news__slide swiper-slide">
-        <picture>
-          <source media="(min-width: 1280px)"
-                srcset="img/news-02-dt.jpg">
-          <img src="img/news-02-m.jpg" alt="photo" width="275" height="189">
-        </picture>
-        <div class="last-news__text">
-          <h3 class="last-news__slide-title">ВАРТОВИМИ ЧАСУ ТА ЦЕГЛИН</h3>
-          <p>Людьми, які живуть ними. Відновлюють за власний кошт. Віддають останнє.</p>
-        </div>
-      </section>
+        <section class="last-news__slide swiper-slide">
+          <picture>
+            <source media="(min-width: 1280px)"
+            srcset="img/news-01-dt.jpg">
+            <img src="img/news-01-m.jpg" alt="photo" width="275" height="189">
+          </picture>
+          <div class="last-news__text">
+            <h3 class="last-news__slide-title">ВАРТОВИМИ ЧАСУ ТА ЦЕГЛИН</h3>
+            <p>Людьми, які живуть ними. Відновлюють за власний кошт. Віддають останнє.</p>
+          </div>
+        </section>
 
-      <section class="last-news__slide swiper-slide">
-        <picture>
-          <source media="(min-width: 1280px)"
-                srcset="img/news-03-dt.jpg">
-          <img src="img/news-03-m.jpg" alt="photo" width="275" height="189">
-        </picture>
-        <div class="last-news__text">
-          <h3 class="last-news__slide-title">ВАРТОВИМИ ЧАСУ ТА ЦЕГЛИН</h3>
-          <p>Людьми, які живуть ними. Відновлюють за власний кошт. Віддають останнє.</p>
-        </div>
-      </section>
+        <section class="last-news__slide swiper-slide">
+          <picture>
+            <source media="(min-width: 1280px)"
+            srcset="img/news-02-dt.jpg">
+            <img src="img/news-02-m.jpg" alt="photo" width="275" height="189">
+          </picture>
+          <div class="last-news__text">
+            <h3 class="last-news__slide-title">ВАРТОВИМИ ЧАСУ ТА ЦЕГЛИН</h3>
+            <p>Людьми, які живуть ними. Відновлюють за власний кошт. Віддають останнє.</p>
+          </div>
+        </section>
 
-    </div>
+        <section class="last-news__slide swiper-slide">
+          <picture>
+            <source media="(min-width: 1280px)"
+            srcset="img/news-03-dt.jpg">
+            <img src="img/news-03-m.jpg" alt="photo" width="275" height="189">
+          </picture>
+          <div class="last-news__text">
+            <h3 class="last-news__slide-title">ВАРТОВИМИ ЧАСУ ТА ЦЕГЛИН</h3>
+            <p>Людьми, які живуть ними. Відновлюють за власний кошт. Віддають останнє.</p>
+          </div>
+        </section>
 
-  </article>
+        <section class="last-news__slide swiper-slide">
+          <picture>
+            <source media="(min-width: 1280px)"
+            srcset="img/news-01-dt.jpg">
+            <img src="img/news-01-m.jpg" alt="photo" width="275" height="189">
+          </picture>
+          <div class="last-news__text">
+            <h3 class="last-news__slide-title">ВАРТОВИМИ ЧАСУ ТА ЦЕГЛИН</h3>
+            <p>Людьми, які живуть ними. Відновлюють за власний кошт. Віддають останнє.</p>
+          </div>
+        </section>
+
+        <section class="last-news__slide swiper-slide">
+          <picture>
+            <source media="(min-width: 1280px)"
+            srcset="img/news-02-dt.jpg">
+            <img src="img/news-02-m.jpg" alt="photo" width="275" height="189">
+          </picture>
+          <div class="last-news__text">
+            <h3 class="last-news__slide-title">ВАРТОВИМИ ЧАСУ ТА ЦЕГЛИН</h3>
+            <p>Людьми, які живуть ними. Відновлюють за власний кошт. Віддають останнє.</p>
+          </div>
+        </section>
+
+        <section class="last-news__slide swiper-slide">
+          <picture>
+            <source media="(min-width: 1280px)"
+            srcset="img/news-03-dt.jpg">
+            <img src="img/news-03-m.jpg" alt="photo" width="275" height="189">
+          </picture>
+          <div class="last-news__text">
+            <h3 class="last-news__slide-title">ВАРТОВИМИ ЧАСУ ТА ЦЕГЛИН</h3>
+            <p>Людьми, які живуть ними. Відновлюють за власний кошт. Віддають останнє.</p>
+          </div>
+        </section>
+
+      </div>
+
+    </article>
+  </div>
 
   <article class="partners">
     <h2 class="partners__title">Партнери</h2>
@@ -479,6 +688,8 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.js"></script>
   <script src="js/lib/jquery.sticky-kit.js"></script>
   <script src="js/lib/swiper.jquery.min.js"></script>
+  <script src="js/lib/background-check.js"></script>
+  <script src="js/scripts.js"></script>
 
   <script>
     $(document).ready(function(){
@@ -503,17 +714,51 @@
         }
       );*/
       //initialize swiper when document ready
-    var mySwiper = new Swiper ('.swiper-container', {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: true,
-      speed: 400,
-      spaceBetween: 100,
-      setWrapperSize: true
-    })
+      var swiper = new Swiper('.swiper-container', {
+        initialSlide: 0,
+        slidesPerView: 3,
+        spaceBetween: 22,
+        autoplay: 3000,
+        autoplayDisableOnInteraction: true,
+        loop: true,
+        grabCursor: true,
+        breakpoints: {
+          // when window width is <= 767px
+          767: {
+            slidesPerView: 'auto',
+            spaceBetween: 20
+          }
+        }
+      });
+
+      var swiperMain = new Swiper('.swiper-container-main', {
+        initialSlide: 0,
+        slidesPerView: 2,
+        spaceBetween: 21,
+        /*autoplay: 3000,
+        autoplayDisableOnInteraction: true,*/
+        loop: true,
+        grabCursor: true,
+        breakpoints: {
+          // when window width is <= 767px
+          767: {
+            slidesPerView: 'auto',
+            spaceBetween: 20
+          }
+        },
+        pagination: '.swiper-pagination-main',
+        paginationClickable: true,
+        paginationBulletRender: function (swiper, index, className) {
+          /*BackgroundCheck.refresh('.main-slider__slide-text-wrapper');*/
+          return '<span class="' + className + '">' + (index + 1) + '</span>' + '<span class="pagination__link-dash"></span>';
+        }
+
+      });
+
     });
   </script>
-  <script src="js/scripts.js"></script>
+
+
 </body>
 
 </html>

@@ -42,6 +42,10 @@
     if (menuItems.classList.contains('main-nav__items--opened')) {
       menuItems.classList.remove('main-nav__items--opened');
     }
+
+    BackgroundCheck.init({
+      targets: '.main-slider__slide-text-wrapper'
+    });
   });
 
   window.addEventListener('keydown', function (e) {
