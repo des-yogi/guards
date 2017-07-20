@@ -1,0 +1,39 @@
+{
+  "name": "12-Guards",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Проект 12 Вартових",
+  "author": "Игорь Беляковский",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "autoprefixer": "7.1.1",
+    "browser-sync": "2.18.12",
+    "css-mqpacker": "6.0.1",
+    "del": "3.0.0",
+    "gulp": "3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "3.0.0",
+    "gulp-htmlmin": "3.0.0",
+    "gulp-image": "^2.9.0",
+    "gulp-less": "3.3.2",
+    "gulp-plumber": "1.1.0",
+    "gulp-postcss": "7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-svgstore": "^6.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-ttf2woff2": "^2.0.2",
+    "run-sequence": "^1.2.2"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "deploy": "gulp deploy",
+    "start": "npm run build && gulp serve"
+  },
+  "engines": {
+    "node": "6.11.0"
+  }
+}

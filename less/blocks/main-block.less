@@ -1,0 +1,126 @@
+.main-block {
+  padding-bottom: 90px;
+  // margin-bottom: 65px;
+
+  @media screen and @tablet-width {
+    padding-bottom: 85px;
+  }
+
+  @media screen and @desktop-width {
+    margin-bottom: 5px;
+  }
+}
+
+.main-block__divider {
+  width: 100%;
+  min-width: 320px;
+  height: 2px;
+  transform: translateY(12px);
+  background:
+    linear-gradient(to bottom, @pink, @pink),
+    linear-gradient(to bottom, @title-color, @title-color);
+  background-position:
+              right top, right top;
+  background-size: 21.875% 100%,
+                   31.25% 100%;
+  background-repeat: no-repeat,
+                     no-repeat;
+
+  @media screen and @tablet-width {
+    background-size: 43.6% 100%,
+                     71.428% 100%;
+  }
+
+  @media screen and @desktop-width {
+    background-size: 42.6% 100%,
+                     66.5% 100%;
+  }
+}
+
+.main-block__title {
+  padding-left: 25px;
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  color: @title-color;
+
+  @media screen and @tablet-width {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  @media screen and @desktop-width {
+    margin-top: -10px;
+    margin-left: 40px;
+    font-size: 37px;
+  }
+}
+
+.main-block__text-choice {
+  display: none;
+
+  @media screen and @tablet-width {
+    display: block;
+    width: 50%;
+    padding-left: 8.24%;
+    font-size: 20px;
+    color: @title-color;
+
+    span {
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and @desktop-width {
+    font-size: 26px;
+  }
+}
+
+.main-block__text {
+  margin-bottom: 25px;
+  padding-right: 28%;
+  font-size: 14px;
+
+  @media screen and @tablet-width {
+    width: 42%;
+    padding: 0 2%;
+    font-size: 18px;
+    color: @white;
+  }
+
+  @media screen and @desktop-width {
+    font-size: 24px;
+  }
+}
+
+.main-block__text-wrapper {
+  @media screen and @tablet-width {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.main-block__hero-projects {
+  display: block;
+  padding-right: 60px;
+  margin-bottom: 90px;
+  font-size: 16px;
+  font-weight: 900;
+  color: @title-color;
+
+  @media screen and @tablet-width {
+    width: 42%;
+    padding: 0 2%;
+    margin: 0;
+    margin-left: auto;
+    font-size: 15px;
+    color: @white;
+  }
+
+  @media screen and @desktop-width {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+}

@@ -1,0 +1,46 @@
+.main-toggler {
+  // margin-bottom: 95px;
+}
+
+.main-block__text-wrapper .main-toggler {
+
+  @media screen and @tablet-width {
+    display: none;
+  }
+}
+
+.main-toggler__toggle {
+  display: inline-block;
+  vertical-align: baseline;
+  position: relative;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: @title-color;
+
+  @media screen and @tablet-width {
+    font-size: 20px;
+  }
+
+  &--active {
+    font-weight: 900;
+    text-decoration: underline;
+  }
+
+  &--castle {
+    padding-right: 50px;
+
+    &::after {
+      position: absolute;
+      top: 9px;
+      left: 82px;
+      content: "";
+      width: 30px;
+      height: 2px;
+      background-color: @text-color;
+    }
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

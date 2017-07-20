@@ -1,0 +1,141 @@
+html {
+  font-family: "GothamPro", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: @text-color;
+  background-color: @white;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.gradient-bg {
+  position: relative;
+  min-width: 320px;
+  background: linear-gradient(to bottom, #4F4F4F, #898785);
+  background-position: right top;
+  background-size: 21.875% 100%;
+  background-repeat: no-repeat;
+
+  @media screen and @tablet-width {
+    background-size: 43.6% 100%;
+  }
+
+  @media screen and @desktop-width {
+    .container-desktop();
+    background-size: 42.6% 100%;
+  }
+}
+
+.read-more-link {
+  position: relative;
+  z-index: 10;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: @text-color;
+
+  &:hover {
+    font-weight: 900;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 6px;
+    right: -40px;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: @pink;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover::after {
+    width: 70px;
+    right: -90px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 2px;
+    right: -40px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid @pink;
+    border-right: 2px solid @pink;
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover::before {
+    right: -90px;
+  }
+
+  &--slider {
+    padding-left: 25px;
+
+    @media screen and @desktop-width {
+      padding-left: 60px;
+    }
+  }
+
+  &--slider-right {
+    @media screen and @tablet-width {
+      color: @white;
+    }
+  }
+}
+
+// Класс jQuery для Sticky-элемент
+.is_stuck {
+  z-index: 20;
+}

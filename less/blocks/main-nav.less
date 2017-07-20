@@ -1,0 +1,261 @@
+.main-nav {
+  position: relative;
+  // background-color: @white;
+}
+
+.main-nav__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 70px;
+  padding-top: 20px;
+
+  // outline: 1px solid gray;
+}
+
+.main-nav__top-logo {
+  display: none;
+}
+
+.main-nav__burger {
+  position: relative;
+  z-index: 25;
+  width: 35px;
+  height: 35px;
+  fill: @white;
+
+  &:hover {
+    fill: @pink;
+  }
+}
+
+.main-nav__burger-icon-open {
+  // position: absolute;
+  cursor: pointer;
+
+  &--hidden {
+    display: none;
+  }
+
+  &--visible {
+    display: block;
+  }
+}
+
+.main-nav__burger-icon-close {
+  cursor: pointer;
+
+  &--visible {
+    display: block;
+    fill: @title-color;
+  }
+
+  &--hidden {
+    display: none;
+  }
+
+}
+
+.main-nav__lang-switcher {
+  padding-top: 5px;
+
+  @media screen and @tablet-width {
+    margin-left: 10px;
+  }
+}
+
+.main-nav__switch {
+  position: relative;
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  color: @text-color;
+  text-transform: uppercase;
+
+  &--active {
+    font-weight: 800;
+    color: @pink;
+  }
+
+  &:hover {
+    font-weight: 800;
+    color: @pink;
+  }
+
+  &--ua::before,
+  &--ru::before {
+    position: absolute;
+    top: 7px;
+    left: 24px;
+    content: "";
+    width: 15px;
+    height: 1px;
+    background-color: @text-color;
+    transform: rotate(-60deg);
+
+    @media screen and @tablet-width {
+      top: 11px;
+      left: 36px;
+      width: 20px;
+    }
+  }
+
+  @media screen and @tablet-width {
+    margin-right: 25px;
+    font-size: 20px;
+  }
+}
+
+.main-nav__items {
+  display: none;
+  position: fixed;
+  z-index: 21;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 550px;
+  // height: 100vh;
+  padding-bottom: 40px;
+  text-align: center;
+  background-color: @white;
+
+  &--opened {
+    // открывает меню
+    display: block;
+    // top: 70px;
+    animation: fadeInDown 0.6s both;
+
+    // outline: 1px solid gray;
+  }
+
+  .main-nav__lang-switcher {
+    display: none;
+
+    @media screen and @desktop-width {
+      display: block;
+      margin-top: 100px;
+    }
+  }
+}
+
+.main-nav__item {
+  margin-bottom: 26px;
+
+  &:last-child {
+    margin-bottom: 0;
+    margin-top: 60px;
+  }
+
+  a {
+    font-size: 16px;
+    font-weight: 500;
+    color: @text-color;
+
+    &:hover {
+      color: @pink;
+    }
+  }
+
+  @media screen and @desktop-width {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 35px;
+
+    &--social {
+      position: relative;
+    }
+
+    a {
+      font-size: 18px;
+    }
+  }
+}
+
+.main-nav__logo-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  padding-bottom: 45px;
+}
+
+.main-nav__logo-menu {
+  margin: 0 auto;
+  // transform: translateX(-50%);
+
+  @media screen and @desktop-width {
+    width: 88px;
+    height: 139.5px;
+    margin-top: 65px;
+  }
+}
+
+.main-nav__burger-icon {
+
+  &--close {
+    fill: @title-color;
+
+    &:hover {
+      fill: @pink;
+    }
+  }
+}
+
+.main-nav__icon {
+  width: 30px;
+  height: 30px;
+  fill: @text-color;
+  margin-right: 20px;
+
+  &--fb:hover {
+    fill: #3b5998;
+  }
+  &--insta:hover {
+    fill: #943ab9;
+  }
+  &--yt:hover {
+    fill: #d42428;
+  }
+}
+
+.main-nav__menu-inner {
+  display: none;
+
+  @media screen and @desktop-width {
+    display: block;
+
+    .pagination {
+      padding: 0;
+      margin-bottom: 45px;
+    }
+  }
+}
+
+.main-nav__slider {
+  // padding: 0 20px;
+  margin-bottom: 135px;
+}
+
+.main-nav__slides {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.main-nav__slide-link {
+  display: block;
+  max-width: 296px;
+  max-height: 186px;
+  overflow: hidden;
+
+  img {
+    transition: all 0.8s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+      filter: saturate(200%);
+    }
+  }
+}

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="css/swiper.css">
+  <title>12 Вартових</title>
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+  </script>
+  <script src="js/lib/picturefill.min.js" async></script>
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="burger" width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,0V35H35V0ZM33,33H2V2H33Z"/>
+      <rect x="13" y="16" width="9" height="2"/>
+      <rect x="13" y="23" width="9" height="2"/>
+      <rect x="13" y="9" width="9" height="2"/>
+    </symbol>
+    <symbol id="burger-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35">
+      <path d="M2,33H33V2H2Zm8-22.5L11.5,9l6.25,6.25L24,9l1.56,1.56-6.25,6.25L25.5,23,24,24.5l-6.19-6.19-6.25,6.25L10,23l6.25-6.25Z" style="fill:none"/>
+      <path d="M0,0V35H35V0ZM33,33H2V2H33Z"/>
+      <polygon points="11.56 24.56 17.81 18.31 24 24.5 25.5 23 19.31 16.81 25.56 10.56 24 9 17.75 15.25 11.5 9 10 10.5 16.25 16.75 10 23 11.56 24.56"/>
+    </symbol>
+    <symbol id="facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.81 30">
+      <path d="M0,5.81A5.8,5.8,0,0,1,5.78,0H24a5.8,5.8,0,0,1,5.78,5.81V24.19A5.8,5.8,0,0,1,24,30H5.78A5.8,5.8,0,0,1,0,24.19Z"/>
+      <path d="M20.54,30V18.36h3.87L25,13.84H20.54V11c0-1.31.36-2.2,2.23-2.2h2.38v-4a31.61,31.61,0,0,0-3.47-.18c-3.43,0-5.78,2.11-5.78,6v3.34H12v4.52H15.9V30Z" style="fill:#fff"/>
+    </symbol>
+    <symbol id="insta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.81 30">
+      <path d="M21.23,7.63a1.51,1.51,0,1,0,1.5,1.51A1.51,1.51,0,0,0,21.23,7.63Zm0,1.54a0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0A0,0,0,0,1,21.23,9.12Z" transform="translate(-0.1)" style="fill:none"/>
+      <path d="M15,9.25A5.75,5.75,0,1,0,20.71,15,5.73,5.73,0,0,0,15,9.25ZM15,19a4,4,0,1,1,3.93-4A3.94,3.94,0,0,1,15,19Z" transform="translate(-0.1)" style="fill:none"/>
+      <circle cx="21.13" cy="9.14" r="0.02" style="fill:#333"/><ellipse cx="14.9" cy="15" rx="3.93" ry="3.95"/>
+      <path d="M20.6,5.4H9.41a4,4,0,0,0-3.94,4V20.63a4,4,0,0,0,3.94,4H20.6a4,4,0,0,0,3.94-4V9.37A4,4,0,0,0,20.6,5.4ZM15,20.75A5.75,5.75,0,1,1,20.71,15,5.73,5.73,0,0,1,15,20.75Zm6.23-10.09a1.51,1.51,0,1,1,1.5-1.51A1.51,1.51,0,0,1,21.23,10.66Z" transform="translate(-0.1)"/>
+      <path d="M24.13,0H5.88A5.8,5.8,0,0,0,.1,5.81V24.19A5.8,5.8,0,0,0,5.88,30H24.13a5.8,5.8,0,0,0,5.78-5.81V5.81A5.8,5.8,0,0,0,24.13,0Zm2.19,20.63A5.74,5.74,0,0,1,20.6,26.4H9.41a5.74,5.74,0,0,1-5.72-5.76V9.37A5.74,5.74,0,0,1,9.41,3.6H20.6a5.74,5.74,0,0,1,5.73,5.76Z" transform="translate(-0.1)"/>
+      <path d="M20.6,3.6H9.41A5.74,5.74,0,0,0,3.68,9.37V20.63A5.74,5.74,0,0,0,9.41,26.4H20.6a5.74,5.74,0,0,0,5.73-5.76V9.37A5.74,5.74,0,0,0,20.6,3.6Zm3.94,17a4,4,0,0,1-3.94,4H9.41a4,4,0,0,1-3.94-4V9.37a4,4,0,0,1,3.94-4H20.6a4,4,0,0,1,3.94,4Z" transform="translate(-0.1)" style="fill:#fff"/>
+    </symbol>
+    <symbol id="youtube" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.81 30">
+      <path d="M24.22,0H6A5.8,5.8,0,0,0,.19,5.81V24.19A5.8,5.8,0,0,0,6,30H24.22A5.8,5.8,0,0,0,30,24.19V5.81A5.8,5.8,0,0,0,24.22,0Zm3.12,19.31a4.2,4.2,0,0,1-1.21,3,4.13,4.13,0,0,1-2.93,1.22H7a4.13,4.13,0,0,1-2.93-1.22,4.2,4.2,0,0,1-1.21-3V10.57a4.2,4.2,0,0,1,1.21-3A4.13,4.13,0,0,1,7,6.4H23.2a4.13,4.13,0,0,1,2.93,1.22,4.2,4.2,0,0,1,1.21,3Z" transform="translate(-0.19)"/>
+      <polygon points="12.27 11.14 12.27 18.74 15.94 16.84 19.62 14.94 15.94 13.04 12.27 11.14"/>
+      <path d="M23.2,6.4H7A4.13,4.13,0,0,0,4.06,7.62a4.2,4.2,0,0,0-1.21,3v8.74a4.2,4.2,0,0,0,1.21,3A4.13,4.13,0,0,0,7,23.49H23.2a4.13,4.13,0,0,0,2.93-1.22,4.2,4.2,0,0,0,1.21-3V10.57a4.2,4.2,0,0,0-1.21-3A4.13,4.13,0,0,0,23.2,6.4ZM16.13,16.84l-3.67,1.9v-7.6L16.13,13l3.67,1.9Z" transform="translate(-0.19)" style="fill:#fff"/>
+    </symbol>
+    <symbol id="plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+      <polygon points="16 7 9 7 9 0 7 0 7 7 0 7 0 9 7 9 7 16 9 16 9 9 16 9 16 7"/>
+    </symbol>
+  </svg>
+
+  <div id="sticky-wrapper">
+
+  <div class="gradient-bg">
+
+    <header class="page-header">
+      <nav class="main-nav">
+        <div class="container  main-nav__top">
+
+          <section class="main-nav__lang-switcher">
+            <a href="" class="main-nav__switch  main-nav__switch--ua  main-nav__switch--active">ua</a>
+            <a href="" class="main-nav__switch  main-nav__switch--ru">ru</a>
+            <a href="" class="main-nav__switch  main-nav__switch--en">en</a>
+          </section>
+
+          <section class="main-nav__top-logo">
+            <img src="img/12-guards-logo.svg" alt="12 Вартових" width="55" height="93">
+          </section>
+
+          <div class="main-nav__burger" id="burgerBtn">
+            <div id="sticky_burger" class="main-nav__sticky-wrapper">
+              <svg class="main-nav__burger-icon-open  main-nav__burger-icon-open--hidden  main-nav__burger-icon-open--visible" width="35" height="35">
+                <use xlink:href="#burger"/>
+              </svg>
+              <svg class="main-nav__burger-icon-close  main-nav__burger-icon-close--visible  main-nav__burger-icon-close--hidden" width="35" height="35">
+                <use xlink:href="#burger-close"/>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+
+        <ul class="main-nav__items  main-nav__items--opened">
+          <li class="main-nav__logo-box">
+            <img class="main-nav__logo-menu" src="img/12-guards-logo.svg" alt="12 Вартових" width="55" height="93">
+          </li>
+          <li class="container  main-nav__menu-inner">
+            <section class="pagination">
+              <div class="pagination__numbers">
+                <a class="active-link" href="">1</a>
+                <a class="pagination__link-dash"></a>
+                <a class="active-link" href="">2</a>
+                <a class="pagination__link-dash"></a>
+                <a class="active-link" href="">3</a>
+                <a class="pagination__link-dash"></a>
+                <a class="active-link" href="">4</a>
+                <a class="pagination__link-dash"></a>
+                <a href="">5</a>
+                <a class="pagination__link-dash"></a>
+                <a href="">6</a>
+                <a class="pagination__link-dash"></a>
+                <a href="">7</a>
+                <a class="pagination__link-dash"></a>
+                <a class="pagination__link" href="">8</a>
+                <a class="pagination__link-dash"></a>
+                <a class="pagination__link" href="">9</a>
+                <a class="pagination__link-dash"></a>
+                <a class="pagination__link" href="">10</a>
+                <a class="pagination__link-dash"></a>
+                <a class="pagination__link" href="">11</a>
+                <a class="pagination__link-dash"></a>
+                <a class="pagination__link" href="">12</a>
+              </div>
+            </section>
+            <section class="main-nav__slider">
+              <div class="main-nav__slides">
+                <div class="main-nav__slide">
+                  <a class="main-nav__slide-link" href="">
+                    <img src="img/main-nav-slide-01.jpg" alt="Замок" width="296" height="186">
+                  </a>
+                </div>
+                <div class="main-nav__slide">
+                  <a class="main-nav__slide-link" href="">
+                    <img src="img/main-nav-slide-02.jpg" alt="Замок" width="296" height="186">
+                  </a>
+                </div>
+                <div class="main-nav__slide">
+                  <a class="main-nav__slide-link" href="">
+                    <img src="img/main-nav-slide-03.jpg" alt="Замок" width="296" height="186">
+                  </a>
+                </div>
+                <div class="main-nav__slide">
+                  <a class="main-nav__slide-link" href="">
+                    <img src="img/main-nav-slide-04.jpg" alt="Замок" width="295" height="186">
+                  </a>
+                </div>
+              </div>
+            </section>
+          </li>
+          <li class="main-nav__item">
+            <a href="">12 Вартових</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">Про проект</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">Хто ми</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">Друзі</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">Концесія</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">Новини</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">Контакты</a>
+          </li>
+          <li class="main-nav__item  main-nav__item--social">
+            <article class="social-links">
+              <a class="social-links__link" href="https://facebook.com" target="_blank">
+                <svg class="social-links__icon social-links__icon--fb" width="30" height="30">
+                  <use xlink:href="#facebook"/>
+                </svg>
+              </a>
+              <a class="social-links__link" href="https://www.instagram.com/" target="_blank">
+                <svg class="social-links__icon  social-links__icon--insta" width="30" height="30">
+                  <use xlink:href="#insta"/>
+                </svg>
+              </a>
+              <a class="social-links__link" href="https://www.youtube.com/" target="_blank">
+                <svg class="social-links__icon  social-links__icon--yt" width="30" height="30">
+                  <use xlink:href="#youtube"/>
+                </svg>
+              </a>
+            </article>
+          </li>
+          <li class="main-nav__lang-switcher-wrapper">
+            <section class="main-nav__lang-switcher">
+              <a href="" class="main-nav__switch  main-nav__switch--ua  main-nav__switch--active">ua</a>
+              <a href="" class="main-nav__switch  main-nav__switch--ru">ru</a>
+              <a href="" class="main-nav__switch  main-nav__switch--en">en</a>
+            </section>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="page-header__block">
+        <div class="container">
+          <h1 class="page-header__title">
+            <img src="img/12-guards-logo.svg" alt="12 Вартових" width="55" height="93">
+          </h1>
+          <p>Коли минуле зустрічається з теперішнім, щоб змінити майбутнє... </p>
+        </div>
+      </article>
+
+    </header><!-- /header -->
+
+    <main class="main-index">
+
+      <div class="hero-main-block-wrapper" id="hero-main-block-wrapper">
+
+        <div class="container  follow-us">
+          <div class="follow-us__soc-link-wrapper" id="follow-us-sticky">
+            <a class="follow-us__soc-link">слідкуй за нами
+              <svg class="follow-us__plus  follow-us__plus--close  follow-us__plus--open" width="16" height="16">
+                <use xlink:href="#plus"/>
+              </svg>
+            </a>
+            <article class="social-links  social-links--close">
+              <a class="social-links__link" href="https://facebook.com" target="_blank">
+                <svg class="social-links__icon social-links__icon--fb" width="30" height="30">
+                  <use xlink:href="#facebook"/>
+                </svg>
+              </a>
+              <a class="social-links__link" href="https://www.instagram.com/" target="_blank">
+                <svg class="social-links__icon  social-links__icon--insta" width="30" height="30">
+                  <use xlink:href="#insta"/>
+                </svg>
+              </a>
+              <a class="social-links__link" href="https://www.youtube.com/" target="_blank">
+                <svg class="social-links__icon  social-links__icon--yt" width="30" height="30">
+                  <use xlink:href="#youtube"/>
+                </svg>
+              </a>
+            </article>
+          </div>
+          <div class="follow-us__inner">
+            <div class="main-toggler" id="follow-us-toggler">
+              <a href="" class="main-toggler__toggle  main-toggler__toggle--castle  main-toggler__toggle--active">ЗАМКИ</a>
+              <a href="" class="main-toggler__toggle  main-toggler__toggle--people">Вартовi</a>
+            </div>
+          </div>
+
+        </div>
+        <article class="hero">
+          <div class="container  hero__text-wrapper">
+            <h2 class="hero__week">Герой тижня</h2>
+            <h3 class="hero__title">Тараканівський Форт</h3>
+            <span class="hero__location">Рівненська область</span>
+          </div>
+          <div class="hero__img-wrapper">
+            <picture>
+              <source media="(min-width: 1280px)"
+              srcset="img/tarak-fort-dt.jpg">
+              <source media="(min-width: 450px)"
+              srcset="img/tarak-fort-tab.jpg">
+              <img src="img/tarak-fort-m.jpg" alt="photo" width="320" height="235">
+            </picture>
+          </div>
+          <div class="container  hero__read-more">
+            <a class="read-more-link" href="">детальніше</a>
+          </div>
+        </article>
+
+        <article class="main-block">
+          <h2 class="visually-hidden">Основной контент</h2>
+          <div class="main-block__divider"></div>
+
+          <div class="container  main-block__text-wrapper">
+            <h2 class="main-block__title">12 ВАРТОВИХ</h2>
+            <p class="main-block__text-choice"><span>Ми обрали 12 замків.</span> 12 харизматичних, історичних, незрівняних споруд, яким можна допомогти маленькими кроками. По цеглині, змінюючи ставлення до них.</p>
+            <p class="main-block__text">Для того, щоб зробити це, ми проїхали 135 000 км і побачили 30 замків. Порозпитували 345 людей. Підняли архіви, які тільки були доступні. Закохалися у кожну цеглинку. <br>Знайшли 12 вартових – саме вони є</p>
+            <span class="main-block__hero-projects">ГОЛОВНИМИ ГЕРОЯМИ ПРОЕКТУ</span>
+
+            <div class="main-toggler">
+              <a href="" class="main-toggler__toggle  main-toggler__toggle--castle  main-toggler__toggle--active">ЗАМКИ</a>
+              <a href="" class="main-toggler__toggle  main-toggler__toggle--people">Вартовi</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <section class="container  pagination">
+        <div class="pagination__numbers">
+          <a class="active-link" href="">1</a>
+          <a class="pagination__link-dash"></a>
+          <a class="active-link" href="">2</a>
+          <a class="pagination__link-dash"></a>
+          <a href="">3</a>
+          <a class="pagination__link-dash"></a>
+          <a href="">4</a>
+          <a class="pagination__link-dash"></a>
+          <a href="">5</a>
+          <a class="pagination__link-dash"></a>
+          <a href="">6</a>
+          <a class="pagination__link-dash"></a>
+          <a href="">7</a>
+          <a class="pagination__link-dash"></a>
+          <a class="pagination__link  pagination__link--white" href="">8</a>
+          <a class="pagination__link-dash  pagination__link-dash--white"></a>
+          <a class="pagination__link  pagination__link--white" href="">9</a>
+          <a class="pagination__link-dash  pagination__link-dash--white"></a>
+          <a class="pagination__link  pagination__link--white" href="">10</a>
+          <a class="pagination__link-dash  pagination__link-dash--white"></a>
+          <a class="pagination__link  pagination__link--white" href="">11</a>
+          <a class="pagination__link-dash  pagination__link-dash--white"></a>
+          <a class="pagination__link  pagination__link--white" href="">12</a>
+        </div>
+      </section>
+
+      <article class="main-slider">
+        <div class="main-slider__slides">
+
+          <section class="main-slider__slide">
+            <h4 class="visually-hidden">Слайд</h4>
+            <span class="main-slider__slide-num">1.</span>
+            <picture>
+              <source media="(min-width: 1280px)"
+              srcset="img/teresch-castle-dt.jpg">
+              <source media="(min-width: 767px)"
+              srcset="img/teresch-castle-tab.jpg">
+              <img class="main-slider__slide-img" src="img/teresch-castle-m.jpg" alt="photo" width="250" height="157">
+            </picture>
+            <div class="main-slider__slide-text-wrapper">
+              <h3 class="main-slider__slide-title">Замок Терещенко</h3>
+              <span class="main-slider__slide-location">Житомирська область</span>
+              <a href="" class="read-more-link  read-more-link--slider">детальніше</a>
+            </div>
+          </section>
+
+          <section class="main-slider__slide">
+            <h4 class="visually-hidden">Слайд</h4>
+            <span class="main-slider__slide-num">2.</span>
+            <picture>
+              <source media="(min-width: 1280px)"
+              srcset="img/solov-mon-dt.jpg">
+              <source media="(min-width: 767px)"
+              srcset="img/solov-mon-tab.jpg">
+              <img class="main-slider__slide-img" src="img/solov-mon-m.jpg" alt="photo" width="250" height="157">
+            </picture>
+            <div class="main-slider__slide-text-wrapper">
+              <h3 class="main-slider__slide-title">Соловецький монастир</h3>
+              <span class="main-slider__slide-location">Тернопільська область</span>
+              <a href="" class="read-more-link  read-more-link--slider  read-more-link--slider-right">детальніше</a>
+            </div>
+          </section>
+        </div>
+      </article>
+
+    </main>
+
+  </div>
+
+  <article class="last-news  swiper-container">
+    <h2 class="last-news__title">Останні новини</h2>
+
+    <div class="last-news__slides-wrapper  swiper-wrapper">
+
+      <section class="last-news__slide swiper-slide">
+        <picture>
+          <source media="(min-width: 1280px)"
+                srcset="img/news-01-dt.jpg">
+          <img src="img/news-01-m.jpg" alt="photo" width="275" height="189">
+        </picture>
+        <div class="last-news__text">
+          <h3 class="last-news__slide-title">ВАРТОВИМИ ЧАСУ ТА ЦЕГЛИН</h3>
+          <p>Людьми, які живуть ними. Відновлюють за власний кошт. Віддають останнє.</p>
+        </div>
+      </section>
+
+      <section class="last-news__slide swiper-slide">
+        <picture>
+          <source media="(min-width: 1280px)"
+                srcset="img/news-02-dt.jpg">
+          <img src="img/news-02-m.jpg" alt="photo" width="275" height="189">
+        </picture>
+        <div class="last-news__text">
+          <h3 class="last-news__slide-title">ВАРТОВИМИ ЧАСУ ТА ЦЕГЛИН</h3>
+          <p>Людьми, які живуть ними. Відновлюють за власний кошт. Віддають останнє.</p>
+        </div>
+      </section>
+
+      <section class="last-news__slide swiper-slide">
+        <picture>
+          <source media="(min-width: 1280px)"
+                srcset="img/news-03-dt.jpg">
+          <img src="img/news-03-m.jpg" alt="photo" width="275" height="189">
+        </picture>
+        <div class="last-news__text">
+          <h3 class="last-news__slide-title">ВАРТОВИМИ ЧАСУ ТА ЦЕГЛИН</h3>
+          <p>Людьми, які живуть ними. Відновлюють за власний кошт. Віддають останнє.</p>
+        </div>
+      </section>
+
+    </div>
+
+  </article>
+
+  <article class="partners">
+    <h2 class="partners__title">Партнери</h2>
+
+    <div class="partners__slider-wrapper">
+
+      <div class="partners__slide">
+        <a class="partners__link" href="http://trip-for-you.top" target="_blank">
+          <picture>
+            <source media="(min-width: 1280px)"
+                srcset="img/trip-for-you-logo-dt.png">
+            <img src="img/trip-for-you-logo-m.png" alt="Trip for You logo" width="230" height="121">
+          </picture>
+        </a>
+        <a class="partners__link" href="https://www.yieldplanet.com" target="_blank">
+          <picture>
+            <source media="(min-width: 1280px)"
+                srcset="img/yieldplanet-logo-dt.png">
+            <img src="img/yieldplanet-logo-m.png" alt="yieldPlanet logo" width="230" height="121">
+          </picture>
+        </a>
+      </div>
+
+    </div>
+  </article>
+
+  </div>
+
+  <footer class="page-footer">
+    <div class="container">
+      <p class="page-footer__text">
+        Формально – чужі, офіційно – державні. <br> Наречені історичними пам’ятками, без шансів на відновлення. Це споруди, що оберігаються простими людьми. Тими, хто мав честь народитися у тій частині географії.
+      </p>
+      <form action="/" method="post" class="subscription">
+        <div class="subscription__inner">
+          <img src="img/12-guards-logo.svg" alt="12 Вартових" width="67" height="112">
+          <div class="subscription__input-wrapper">
+            <h2 class="subscription__title">Підписатись <br>на новини</h2>
+            <input class="subscription__input" id="subscription__email-field" type="text" name="email" placeholder="Ваш Email">
+            <button type="submit" class="subscription__submit">Відправити</button>
+          </div>
+        </div>
+      </form>
+      <article class="page-footer__nav">
+        <ul class="page-footer__nav-list">
+          <li class="page-footer__nav-item">
+            <a href="">12 Вартових</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a href="">Про проект</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a href="">Хто ми</a></li
+            >
+          <li class="page-footer__nav-item">
+            <a href="">Друзі</a></li>
+
+          <li class="page-footer__nav-item">
+            <a href="">Концесія</a></
+            li>
+          <li class="page-footer__nav-item">
+            <a href="">Новини</a></li
+            >
+          <li class="page-footer__nav-item">
+            <a href="">Контакты</a>
+          </li>
+        </ul>
+      </article>
+      <section class="copyrights">
+        <div class="copyrights__logo-wrapper">
+          <img class="copyrights__logo" src="img/12-guards-logo.svg" alt="12 Вартових" width="48" height="81">
+        </div>
+        <div class="copyrights__text">
+          <a class="copyrights__link" href="it-doors.com" target="_blank">
+            <span>© 12 ВАРТОВИХ by</span>
+            <img src="img/it-doors-logo.svg" alt="IT Doors logo" width="49.28" height="18">
+          </a>
+      </div>
+      </section>
+    </div>
+    <a href="" class="join-up">
+      <span>Приєднатися</span>
+      <img src="img/icons/ballon.svg" alt="">
+    </a>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.js"></script>
+  <script src="js/lib/jquery.sticky-kit.js"></script>
+  <script src="js/lib/swiper.jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      /*$("#sticky_burger").stick_in_parent(
+        {
+          parent: '#sticky-wrapper',
+          offset_top: 20
+        }
+      );
+
+      $("#follow-us-sticky").stick_in_parent(
+        {
+          parent: '#sticky-wrapper',
+          offset_top: 20
+        }
+      );
+
+      $("#follow-us-toggler").stick_in_parent(
+        {
+          parent: '#hero-main-block-wrapper',
+          offset_top: 20
+        }
+      );*/
+      //initialize swiper when document ready
+    var mySwiper = new Swiper ('.swiper-container', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+      speed: 400,
+      spaceBetween: 100,
+      setWrapperSize: true
+    })
+    });
+  </script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

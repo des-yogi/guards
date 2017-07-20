@@ -1,0 +1,64 @@
+.pagination {
+  display: none;
+
+  @media screen and @tablet-width {
+    position: relative;
+    display: block;
+    width: auto;
+    min-height: 15px;
+    margin-bottom: 55px;
+  }
+
+  @media screen and @desktop-width {
+    padding-bottom: 50px;
+  }
+}
+
+.pagination__numbers {
+  display: flex;
+  justify-content: space-between;
+  font-size: 19px;
+
+  a {
+    position: relative;
+    color: @title-color;
+
+    &.active-link {
+      font-weight: 900;
+      text-decoration: underline;
+      color: @pink;
+    }
+
+    &:hover {
+      font-weight: 900;
+      text-decoration: underline;
+    }
+  }
+
+  @media screen and @desktop-width {
+    padding: 0 115px;
+    font-size: 26px;
+  }
+}
+
+.pagination__link-dash {
+  display: block;
+  width: 2%;
+  height: 2px;
+  transform: translateY(9px);
+  background-color: @title-color;
+
+  &--white {
+    background-color: @white;
+  }
+
+  @media screen and @desktop-width {
+    transform: translateY(13px);
+  }
+}
+
+a.pagination__link {
+  &--white {
+    color:  @white;
+  }
+}
