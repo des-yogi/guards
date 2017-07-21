@@ -20,39 +20,49 @@
     }
   };
 
-  followUs.addEventListener('click', followUsHandler);
-
   var mouseClickHandler = function (e) {
     e.preventDefault();
     if (menuItems.classList.contains('main-nav__items--opened')) {
       menuItems.classList.remove('main-nav__items--opened');
-      menuOpenBtn.classList.add('main-nav__burger-icon-open--visible');
-      menuCloseBtn.classList.add('main-nav__burger-icon-close--hidden');
+      // menuOpenBtn.classList.add('main-nav__burger-icon-open--visible');
+      // menuCloseBtn.classList.add('main-nav__burger-icon-close--hidden');
+      menuOpenBtn.style.display = 'block';
+      menuCloseBtn.style.display = 'none';
     } else {
       menuItems.classList.add('main-nav__items--opened');
-      menuOpenBtn.classList.remove('main-nav__burger-icon-open--visible');
-      menuCloseBtn.classList.remove('main-nav__burger-icon-close--hidden');
+      // menuOpenBtn.classList.remove('main-nav__burger-icon-open--visible');
+      // menuCloseBtn.classList.remove('main-nav__burger-icon-close--hidden');
+      menuOpenBtn.style.display = 'none';
+      menuCloseBtn.style.display = 'block';
     }
   };
 
-  menuOpenBtn.addEventListener('click', mouseClickHandler);
-  menuCloseBtn.addEventListener('click', mouseClickHandler);
+
 
   window.addEventListener('DOMContentLoaded', function (e) {
     if (menuItems.classList.contains('main-nav__items--opened')) {
       menuItems.classList.remove('main-nav__items--opened');
     }
 
-    BackgroundCheck.init({
-      targets: '.main-slider__slide-text-wrapper'
-    });
+    menuOpenBtn.addEventListener('click', mouseClickHandler);
+    menuCloseBtn.addEventListener('click', mouseClickHandler);
+    followUs.addEventListener('click', followUsHandler);
   });
+
+  /*document.addEventListener('DOMContentLoaded', function (e) {
+    BackgroundCheck.init({
+      targets: '.main-toggler__toggle'
+    });
+    BackgroundCheck.refresh();
+  });*/
 
   window.addEventListener('keydown', function (e) {
     if(window.utils.isDeactivateEvent(e) && menuItems.classList.contains('main-nav__items--opened')) {
       menuItems.classList.remove('main-nav__items--opened');
-      menuOpenBtn.classList.add('main-nav__burger-icon-open--visible');
-      menuCloseBtn.classList.add('main-nav__burger-icon-close--hidden');
+      // menuOpenBtn.classList.add('main-nav__burger-icon-open--visible');
+      // menuCloseBtn.classList.add('main-nav__burger-icon-close--hidden');
+      menuOpenBtn.style.display = 'block';
+      menuCloseBtn.style.display = 'none';
     }
   });
 

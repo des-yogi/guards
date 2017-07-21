@@ -267,7 +267,7 @@
             <span class="main-block__hero-projects">ГОЛОВНИМИ ГЕРОЯМИ ПРОЕКТУ</span>
 
             <div class="main-toggler">
-              <a href="" class="main-toggler__toggle  main-toggler__toggle--castle  main-toggler__toggle--active">ЗАМКИ</a>
+              <a href="" class="main-toggler__toggle  main-toggler__toggle--castle  main-toggler__toggle--active next">ЗАМКИ</a>
               <a href="" class="main-toggler__toggle  main-toggler__toggle--people">Вартовi</a>
             </div>
           </div>
@@ -688,16 +688,19 @@
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.js"></script>
   <script src="js/lib/jquery.sticky-kit.js"></script>
-  <script src="js/lib/swiper.jquery.min.js"></script>
-  <script src="js/lib/background-check.js"></script>
+  <script src="js/lib/swiper.jquery.js"></script>
+  <!-- <script src="js/lib/background-check.min.js"></script> -->
   <script src="js/scripts.js"></script>
 
   <script>
+
     $(document).ready(function(){
+
       /*$("#sticky_burger").stick_in_parent(
         {
           parent: '#sticky-wrapper',
-          offset_top: 20
+          offset_top: 20,
+          spacer: false
         }
       );
 
@@ -711,16 +714,18 @@
       $("#follow-us-toggler").stick_in_parent(
         {
           parent: '#hero-main-block-wrapper',
-          offset_top: 20
+          offset_top: 20,
+          spacer: false
         }
       );*/
+
       //initialize swiper when document ready
       var swiper = new Swiper('.swiper-container', {
         initialSlide: 0,
         slidesPerView: 3,
         spaceBetween: 22,
         autoplay: 3000,
-        autoplayDisableOnInteraction: true,
+        // autoplayDisableOnInteraction: true,
         loop: true,
         grabCursor: true,
         breakpoints: {
@@ -733,6 +738,7 @@
       });
 
       var swiperMain = new Swiper('.swiper-container-main', {
+
         initialSlide: 0,
         slidesPerView: 2,
         spaceBetween: 21,
@@ -751,10 +757,35 @@
         paginationClickable: true,
         paginationBulletRender: function (swiper, index, className) {
           /*BackgroundCheck.refresh('.main-slider__slide-text-wrapper');*/
-          return '<span class="' + className + '">' + (index + 1) + '</span>' + '<span class="pagination__link-dash"></span>';
+          return '<span class="' + className + '">' + (index + 1) + '</span>'/* + '<span class="pagination__link-dash"></span>'*/;
+        },
+        /*onSlideChangeStart: function (swiper) {
+          console.log(swiper.activeIndex, swiper.realIndex);
+
+        },*/
+
+        onSlideChangeStart: function (swiper) {
+          // console.log('Left: '+ swiper.realIndex + ' Right: ' + swiper.realIndex+1);
+          //var slideLeft = swiper.slides[swiper.activeIndex];
+          var rightIndex = swiper.realIndex + 1;
+          var leftIndex = swiper.realIndex;
+          console.log('Left: '+ leftIndex + ' Right: ' + rightIndex);
+          var slideLeft = swiper.slides[leftIndex+2];
+          var slideRight = swiper.slides[rightIndex+2];
+
+          console.log(slideLeft);
+          console.log(slideRight);
+          // slideLeft.style.color = 'gray';
+          slideLeft.style.transform = 'none';
+          slideLeft.childNodes[7].className = 'main-slider__slide-text-wrapper';
+
+          // slideRight.style.color = 'red';
+          slideRight.style.transform = 'translateY(' + 35 + 'px)';
+          slideRight.childNodes[7].className = 'main-slider__slide-text-wrapper--right';
         }
 
       });
+
 
     });
   </script>
