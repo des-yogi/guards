@@ -15,29 +15,26 @@
 }
 
 .pagination__numbers {
-  /* display: flex;
-  justify-content: space-between;
-  font-size: 19px; */
 
-  /* a {
-    position: relative;
-    color: @title-color;
-
-    &.active-link {
-      font-weight: 900;
-      text-decoration: underline;
-      color: @pink;
-    }
-
-    &:hover {
-      font-weight: 900;
-      text-decoration: underline;
-    }
-  } */
+  @media screen and @tablet-width {
+    background-image: url(../img/dash-line.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+    background-position: 50% 33%;
+  }
 
   @media screen and @desktop-width {
     padding: 0 115px;
     font-size: 26px;
+    background-size: 1008px 2px;
+    background-position: 50% 45%;
+  }
+
+  &--nav {
+
+    @media screen and @desktop-width {
+      background-image: url(../img/dash-line-black.svg);
+    }
   }
 }
 

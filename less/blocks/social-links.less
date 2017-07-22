@@ -44,8 +44,11 @@
 }
 
 .main-nav__item--social .social-links {
-  position: absolute;
-  top: -648px;
-  left: -1170px;
-  display: flex;
+
+  @media screen and @desktop-width {
+    position: absolute;
+    display: flex;
+    top: -695px;
+    left: -1170px;
+  }
 }
