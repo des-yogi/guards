@@ -34,10 +34,107 @@
       // menuCloseBtn.classList.remove('main-nav__burger-icon-close--hidden');
       menuOpenBtn.style.display = 'none';
       menuCloseBtn.style.display = 'block';
+      var swiperN = new Swiper('.swiper-container-nav', {
+
+        initialSlide: 0,
+        slidesPerView: 4,
+        spaceBetween: 20,
+        autoplay: 2000,
+        // autoplayDisableOnInteraction: true,
+        loop: true,
+        grabCursor: true,
+        pagination: '.swiper-pagination-nav',
+        paginationClickable: true,
+        paginationBulletRender: function (swiper, index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        }
+
+      });
     }
   };
 
+  var swiper = new Swiper('.swiper-container', {
+    initialSlide: 0,
+    slidesPerView: 3,
+    spaceBetween: 22,
+    autoplay: 3000,
+    // autoplayDisableOnInteraction: true,
+    loop: true,
+    grabCursor: true,
+    breakpoints: {
+      // when window width is <= 767px
+      767: {
+        slidesPerView: 'auto',
+        spaceBetween: 20
+      }
+    }
+  });
 
+  var swiperMain = new Swiper('.swiper-container-main', {
+
+    initialSlide: 0,
+    slidesPerView: 2,
+    spaceBetween: 21,
+    /*autoplay: 3000,
+    autoplayDisableOnInteraction: true,*/
+    loop: true,
+    grabCursor: true,
+    breakpoints: {
+      // when window width is <= 767px
+      767: {
+        slidesPerView: 'auto',
+        spaceBetween: 20
+      }
+    },
+    pagination: '.swiper-pagination-main',
+    paginationClickable: true,
+    paginationBulletRender: function (swiper, index, className) {
+      return '<span class="' + className + '">' + (index + 1) + '</span>';
+    },
+    onSlideChangeStart: function (swiper) {
+      // console.log('Left: '+ swiper.realIndex + ' Right: ' + swiper.realIndex+1);
+      //var slideLeft = swiper.slides[swiper.activeIndex];
+      var rightIndex = swiper.realIndex + 1;
+      var leftIndex = swiper.realIndex;
+      console.log('Left: '+ leftIndex + ' Right: ' + rightIndex);
+      var slideLeft = swiper.slides[leftIndex+2];
+      var slideRight = swiper.slides[rightIndex+2];
+
+      console.log(slideLeft);
+      console.log(slideRight);
+      // slideLeft.style.color = 'gray';
+      slideLeft.style.transform = 'none';
+      slideLeft.childNodes[7].className = 'main-slider__slide-text-wrapper';
+
+      // slideRight.style.color = 'red';
+      slideRight.style.transform = 'translateY(' + 35 + 'px)';
+      slideRight.childNodes[7].className = 'main-slider__slide-text-wrapper--right';
+    }
+
+  });
+
+  $("#sticky_burger").stick_in_parent(
+        {
+          parent: '#sticky-wrapper',
+          offset_top: 20,
+          spacer: false
+        }
+      );
+
+  $("#follow-us-sticky").stick_in_parent(
+    {
+      parent: '#sticky-wrapper',
+      offset_top: 20
+    }
+  );
+
+  $("#follow-us-toggler").stick_in_parent(
+    {
+      parent: '#hero-main-block-wrapper',
+      offset_top: 20,
+      spacer: false
+    }
+  );
 
   window.addEventListener('DOMContentLoaded', function (e) {
     if (menuItems.classList.contains('main-nav__items--opened')) {
@@ -48,13 +145,6 @@
     menuCloseBtn.addEventListener('click', mouseClickHandler);
     followUs.addEventListener('click', followUsHandler);
   });
-
-  /*document.addEventListener('DOMContentLoaded', function (e) {
-    BackgroundCheck.init({
-      targets: '.main-toggler__toggle'
-    });
-    BackgroundCheck.refresh();
-  });*/
 
   window.addEventListener('keydown', function (e) {
     if(window.utils.isDeactivateEvent(e) && menuItems.classList.contains('main-nav__items--opened')) {
