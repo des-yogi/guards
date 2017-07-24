@@ -93,14 +93,22 @@
 }
 
 .hero__img-wrapper {
+  overflow: hidden;
 
   @media screen and @tablet-width {
     flex-grow: 1;
-    width: 436px;
+    width: 60%;
   }
 
   img {
     width: 100%;
+    transform: scale(1);
+    transition: all 0.5s ease;
+
+    &:hover {
+      transform: scale(1.1);
+      filter: saturate(150%);
+    }
   }
 }
 
