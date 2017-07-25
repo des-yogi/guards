@@ -47,6 +47,18 @@
       font-size: 50px;
     }
   }
+
+  &--keepers {
+    margin-bottom: 60px;
+    min-height: 499px;
+    background-image: url(../img/guards-hero-bartosh-mobile@1x.jpg);
+    background-position: 40% 100%;
+
+    @media screen and @desktop-width {
+      padding-bottom: 95px;
+      background-image: url(../img/guards-hero-bartosh-desktop@1x.jpg);
+    }
+  }
 }
 
 .page-header__title {
@@ -64,5 +76,45 @@
       width: 75px;
       height: 126px;
     }
+  }
+}
+
+.page-header__logo {
+  display: none;
+
+  @media screen and @tablet-width {
+    display: block;
+  }
+}
+
+.page-header__text {
+  letter-spacing: 1px;
+  color: @white;
+  transform: translateY(105px);
+
+  @media screen and @desktop-width {
+    padding: 0 105px;
+    transform: translateY(35px);
+  }
+}
+
+.page-header__guards {
+  margin-bottom: 25px;
+  font-size: 25px;
+  font-weight: 900;
+  text-transform: uppercase;
+
+  @media screen and @desktop-width {
+    font-size: 50px;
+  }
+}
+
+.page-header__location {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
+
+  @media screen and @desktop-width {
+    font-size: 40px;
   }
 }

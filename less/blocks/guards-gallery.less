@@ -1,0 +1,53 @@
+.guards-gallery {
+  margin-top: 25px;
+  outline:  1px solid black;
+
+  @media screen and @desktop-width {
+    width: 100%;
+    .container-desktop();
+  }
+}
+
+.guards-gallery__container {
+  margin-bottom: 50px;
+
+  outline:  1px solid red;
+}
+
+.guards-gallery__slide {
+  width: 275px;
+  height: auto;
+
+  outline:  1px solid blue;
+
+  @media screen and @desktop-width {
+    width: 610px;
+    transition: all 0.7s ease;
+  }
+}
+
+.guards-gallery__img-container {
+  width: 100%;
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    // transition: all 0.5s ease;
+
+    &:hover {
+      // transform: scale(1.1);
+      // filter: saturate(150%);
+    }
+  }
+}
+
+.guards-gallery__link-container {
+  margin-left: 40px;
+
+  @media screen and @desktop-width {
+    text-align: right;
+    margin-right: 340px;
+  }
+}
