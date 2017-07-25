@@ -1,7 +1,12 @@
 .main-toggler__wrapper {
+  position: relative;
 
   &--keepers {
     padding-bottom: 55px;
+
+    @media screen and @desktop-width {
+      padding: 0;
+    }
   }
 }
 
@@ -34,6 +39,13 @@
 
   @media screen and @desktop-width {
     transform: translateX(-5px);
+  }
+
+  &--keepers {
+    position: absolute;
+    top: -938px;
+    left: 50%;
+    margin-left: -120px;
   }
 }
 

@@ -140,6 +140,42 @@
 
   });
 
+  var swiperGalery = new Swiper('.swiper-container--galery', {
+
+    initialSlide: 0,
+    slidesPerView: 2,
+    spaceBetween: 21,
+    loop: true,
+    grabCursor: true,
+    breakpoints: {
+      // when window width is <= 767px
+      767: {
+        slidesPerView: 'auto',
+        spaceBetween: 20
+      }
+    },
+    onSlideChangeStart: function (swiper) {
+      // console.log('Left: '+ swiper.realIndex + ' Right: ' + swiper.realIndex+1);
+      //var slideLeft = swiper.slides[swiper.activeIndex];
+      var rightIndex = swiper.realIndex + 1;
+      var leftIndex = swiper.realIndex;
+      console.log('Left: '+ leftIndex + ' Right: ' + rightIndex);
+      var slideLeft = swiper.slides[leftIndex+2];
+      var slideRight = swiper.slides[rightIndex+2];
+
+      console.log(slideLeft);
+      console.log(slideRight);
+      // slideLeft.style.color = 'gray';
+      slideRight.style.transform = 'none';
+      //slideLeft.childNodes[7].className = 'main-slider__slide-text-wrapper';
+
+      // slideRight.style.color = 'red';
+      slideLeft.style.transform = 'translateY(' + 35 + 'px)';
+      //slideRight.childNodes[7].className = 'main-slider__slide-text-wrapper--right';
+    }
+
+  });
+
   $("#sticky_burger").stick_in_parent(
         {
           parent: '#sticky-wrapper',
