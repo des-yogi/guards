@@ -6,7 +6,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
-  <title>12 Вартових: Главная</title>
+  <title>12 Вартових: Вартові</title>
   <script>
     // Picture element HTML5 shiv
     document.createElement("picture");
@@ -51,7 +51,7 @@
 
   <div id="sticky-wrapper">
 
-  <div class="gradient-bg">
+  <div class="gradient-bg  gradient-bg--none">
 
     <header class="page-header">
       <nav class="main-nav">
@@ -64,12 +64,10 @@
           </section>
 
           <section class="main-nav__top-logo">
-            <a href="#">
-              <img src="img/12-guards-logo.svg" alt="12 Вартових" width="55" height="93">
-            </a>
+            <img src="img/12-guards-logo.svg" alt="12 Вартових" width="55" height="93">
           </section>
 
-          <div class="main-nav__burger" id="burgerBtn">
+          <div class="main-nav__burger  main-nav__burger--dark" id="burgerBtn">
             <div id="sticky_burger" class="main-nav__sticky-wrapper">
               <svg class="main-nav__burger-icon-open  main-nav__burger-icon-open--hidden  main-nav__burger-icon-open--visible" width="35" height="35">
                 <use xlink:href="#burger"/>
@@ -224,324 +222,80 @@
 
     </header><!-- /header -->
 
-    <main class="main-index">
+    <main class="main--keepers">
 
-      <div class="hero-main-block-wrapper" id="hero-main-block-wrapper">
-
-        <div class="container  follow-us">
-          <div class="follow-us__soc-link-wrapper" id="follow-us-sticky">
-            <a class="follow-us__soc-link">слідкуй за нами
-              <!-- <svg class="follow-us__plus  follow-us__plus--close  follow-us__plus--open" width="16" height="16">
-                <use xlink:href="#plus"/>
-              </svg> -->
-              <div class="follow-us__plus follow-us__plus--close follow-us__plus--open"></div>
+      <div class="container  follow-us">
+        <div class="follow-us__soc-link-wrapper" id="follow-us-sticky">
+          <a class="follow-us__soc-link">слідкуй за нами
+            <div class="follow-us__plus follow-us__plus--close follow-us__plus--open"></div>
+          </a>
+          <article class="social-links  social-links--close">
+            <a class="social-links__link" href="https://facebook.com" target="_blank">
+              <svg class="social-links__icon social-links__icon--fb" width="30" height="30">
+                <use xlink:href="#facebook"/>
+              </svg>
             </a>
-            <article class="social-links  social-links--close">
-              <a class="social-links__link" href="https://facebook.com" target="_blank">
-                <svg class="social-links__icon social-links__icon--fb" width="30" height="30">
-                  <use xlink:href="#facebook"/>
-                </svg>
-              </a>
-              <a class="social-links__link" href="https://www.instagram.com/" target="_blank">
-                <svg class="social-links__icon  social-links__icon--insta" width="30" height="30">
-                  <use xlink:href="#insta"/>
-                </svg>
-              </a>
-              <a class="social-links__link" href="https://www.youtube.com/" target="_blank">
-                <svg class="social-links__icon  social-links__icon--yt" width="30" height="30">
-                  <use xlink:href="#youtube"/>
-                </svg>
-              </a>
-            </article>
-          </div>
-          <div class="follow-us__inner">
-            <div class="main-toggler" id="follow-us-toggler">
-              <a href="castles.html" class="main-toggler__toggle  main-toggler__toggle--castle  main-toggler__toggle--active" target="_self">ЗАМКИ</a>
-              <a href="keepers.html" class="main-toggler__toggle  main-toggler__toggle--people" target="_self">Вартовi</a>
-            </div>
-          </div>
-
+            <a class="social-links__link" href="https://www.instagram.com/" target="_blank">
+              <svg class="social-links__icon  social-links__icon--insta" width="30" height="30">
+                <use xlink:href="#insta"/>
+              </svg>
+            </a>
+            <a class="social-links__link" href="https://www.youtube.com/" target="_blank">
+              <svg class="social-links__icon  social-links__icon--yt" width="30" height="30">
+                <use xlink:href="#youtube"/>
+              </svg>
+            </a>
+          </article>
         </div>
-        <article class="hero">
-          <div class="container  hero__text-wrapper">
-            <h2 class="hero__week">Герой тижня</h2>
-            <h3 class="hero__title">Тараканівський Форт</h3>
-            <span class="hero__location">Рівненська область</span>
-          </div>
-          <div class="hero__img-wrapper">
-            <a href="" class="hero__link">
-              <picture>
-                <source media="(min-width: 1280px)"
-                srcset="img/tarak-fort-dt.jpg">
-                <source media="(min-width: 450px)"
-                srcset="img/tarak-fort-tab.jpg">
-                <img src="img/tarak-fort-m.jpg" alt="photo" width="320" height="235">
-              </picture>
-            </a>
-          </div>
-          <div class="container  hero__read-more">
-            <a class="read-more-link" href="">детальніше</a>
-          </div>
-        </article>
-
-        <article class="main-block">
-          <h2 class="visually-hidden">Основной контент</h2>
-          <div class="main-block__divider"></div>
-
-          <div class="container  main-block__text-wrapper">
-            <h2 class="main-block__title">12 ВАРТОВИХ</h2>
-            <p class="main-block__text-choice"><span>Ми обрали 12 замків.</span> 12 харизматичних, історичних, незрівняних споруд, яким можна допомогти маленькими кроками. По цеглині, змінюючи ставлення до них.</p>
-            <p class="main-block__text">Для того, щоб зробити це, ми проїхали 135 000 км і побачили 30 замків. Порозпитували 345 людей. Підняли архіви, які тільки були доступні. Закохалися у кожну цеглинку. <br>Знайшли 12 вартових – саме вони є</p>
-            <span class="main-block__hero-projects">ГОЛОВНИМИ ГЕРОЯМИ ПРОЕКТУ</span>
-
-            <div class="main-toggler">
-              <a href="castles.html" class="main-toggler__toggle  main-toggler__toggle--castle  main-toggler__toggle--active next">ЗАМКИ</a>
-              <a href="keepers.html" class="main-toggler__toggle  main-toggler__toggle--people">Вартовi</a>
-            </div>
-          </div>
-        </article>
       </div>
 
-      <section class="container  pagination">
-        <div class="pagination__numbers  pagination__numbers--main  swiper-pagination-main">
+      <div class="container  main-toggler__wrapper  main-toggler__wrapper--keepers">
+        <div class="main-toggler">
+          <a href="castles.html" class="main-toggler__toggle  main-toggler__toggle--castle" target="_self">ЗАМКИ</a>
+          <a href="keepers.html" class="main-toggler__toggle  main-toggler__toggle--people  main-toggler__toggle--active" target="_self">Вартовi</a>
         </div>
-      </section>
+      </div>
 
-      <article class="main-slider  swiper-container-main">
-        <div class="main-slider__slides  swiper-wrapper">
+      <article class="guards-content">
 
-          <section class="main-slider__slide  swiper-slide">
-            <h4 class="visually-hidden">Слайд</h4>
-            <span class="main-slider__slide-num">1.</span>
-            <div class="main-slider__img-container">
-              <picture>
-                <source media="(min-width: 1280px)"
-                srcset="img/teresch-castle-dt.jpg">
-                <source media="(min-width: 767px)"
-                srcset="img/teresch-castle-tab.jpg">
-                <img class="main-slider__slide-img" src="img/teresch-castle-m.jpg" alt="photo" width="250" height="157">
-              </picture>
-            </div>
-            <div class="main-slider__slide-text-wrapper">
-              <h3 class="main-slider__slide-title">Замок Терещенко</h3>
-              <span class="main-slider__slide-location">Житомирська область</span>
-              <a href="" class="read-more-link  read-more-link--slider">детальніше</a>
-            </div>
-          </section>
-
-          <section class="main-slider__slide  swiper-slide">
-            <h4 class="visually-hidden">Слайд</h4>
-            <span class="main-slider__slide-num">2.</span>
-            <div class="main-slider__img-container">
-              <picture>
-                <source media="(min-width: 1280px)"
-                srcset="img/solov-mon-dt.jpg">
-                <source media="(min-width: 767px)"
-                srcset="img/solov-mon-tab.jpg">
-                <img class="main-slider__slide-img" src="img/solov-mon-m.jpg" alt="photo" width="250" height="157">
-              </picture>
-            </div>
-            <div class="main-slider__slide-text-wrapper">
-              <h3 class="main-slider__slide-title">Соловецький монастир</h3>
-              <span class="main-slider__slide-location">Тернопільська область</span>
-              <a href="" class="read-more-link  read-more-link--slider  read-more-link--slider-right">детальніше</a>
-            </div>
-          </section>
-
-          <section class="main-slider__slide  swiper-slide">
-            <h4 class="visually-hidden">Слайд</h4>
-            <span class="main-slider__slide-num">3.</span>
-            <div class="main-slider__img-container">
-              <picture>
-                <source media="(min-width: 1280px)"
-                srcset="img/teresch-castle-dt.jpg">
-                <source media="(min-width: 767px)"
-                srcset="img/teresch-castle-tab.jpg">
-                <img class="main-slider__slide-img" src="img/teresch-castle-m.jpg" alt="photo" width="250" height="157">
-              </picture>
-            </div>
-            <div class="main-slider__slide-text-wrapper">
-              <h3 class="main-slider__slide-title">Замок Терещенко</h3>
-              <span class="main-slider__slide-location">Житомирська область</span>
-              <a href="" class="read-more-link  read-more-link--slider">детальніше</a>
-            </div>
-          </section>
-
-          <section class="main-slider__slide  swiper-slide">
-            <h4 class="visually-hidden">Слайд</h4>
-            <span class="main-slider__slide-num">4.</span>
-            <div class="main-slider__img-container">
-              <picture>
-                <source media="(min-width: 1280px)"
-                srcset="img/solov-mon-dt.jpg">
-                <source media="(min-width: 767px)"
-                srcset="img/solov-mon-tab.jpg">
-                <img class="main-slider__slide-img" src="img/solov-mon-m.jpg" alt="photo" width="250" height="157">
-              </picture>
-            </div>
-            <div class="main-slider__slide-text-wrapper">
-              <h3 class="main-slider__slide-title">Соловецький монастир</h3>
-              <span class="main-slider__slide-location">Тернопільська область</span>
-              <a href="" class="read-more-link  read-more-link--slider  read-more-link--slider-right">детальніше</a>
-            </div>
-          </section>
-
-          <section class="main-slider__slide  swiper-slide">
-            <h4 class="visually-hidden">Слайд</h4>
-            <span class="main-slider__slide-num">5.</span>
-            <div class="main-slider__img-container">
-              <picture>
-                <source media="(min-width: 1280px)"
-                srcset="img/teresch-castle-dt.jpg">
-                <source media="(min-width: 767px)"
-                srcset="img/teresch-castle-tab.jpg">
-                <img class="main-slider__slide-img" src="img/teresch-castle-m.jpg" alt="photo" width="250" height="157">
-              </picture>
-            </div>
-            <div class="main-slider__slide-text-wrapper">
-              <h3 class="main-slider__slide-title">Замок Терещенко</h3>
-              <span class="main-slider__slide-location">Житомирська область</span>
-              <a href="" class="read-more-link  read-more-link--slider">детальніше</a>
-            </div>
-          </section>
-
-          <section class="main-slider__slide  swiper-slide">
-            <h4 class="visually-hidden">Слайд</h4>
-            <span class="main-slider__slide-num">6.</span>
-            <div class="main-slider__img-container">
-              <picture>
-                <source media="(min-width: 1280px)"
-                srcset="img/solov-mon-dt.jpg">
-                <source media="(min-width: 767px)"
-                srcset="img/solov-mon-tab.jpg">
-                <img class="main-slider__slide-img" src="img/solov-mon-m.jpg" alt="photo" width="250" height="157">
-              </picture>
-            </div>
-            <div class="main-slider__slide-text-wrapper">
-              <h3 class="main-slider__slide-title">Соловецький монастир</h3>
-              <span class="main-slider__slide-location">Тернопільська область</span>
-              <a href="" class="read-more-link  read-more-link--slider  read-more-link--slider-right">детальніше</a>
-            </div>
-          </section>
-
-          <section class="main-slider__slide  swiper-slide">
-            <h4 class="visually-hidden">Слайд</h4>
-            <span class="main-slider__slide-num">7.</span>
-            <div class="main-slider__img-container">
-              <picture>
-                <source media="(min-width: 1280px)"
-                srcset="img/teresch-castle-dt.jpg">
-                <source media="(min-width: 767px)"
-                srcset="img/teresch-castle-tab.jpg">
-                <img class="main-slider__slide-img" src="img/teresch-castle-m.jpg" alt="photo" width="250" height="157">
-              </picture>
-            </div>
-            <div class="main-slider__slide-text-wrapper">
-              <h3 class="main-slider__slide-title">Замок Терещенко</h3>
-              <span class="main-slider__slide-location">Житомирська область</span>
-              <a href="" class="read-more-link  read-more-link--slider">детальніше</a>
-            </div>
-          </section>
-
-          <section class="main-slider__slide  swiper-slide">
-            <h4 class="visually-hidden">Слайд</h4>
-            <span class="main-slider__slide-num">8.</span>
-            <div class="main-slider__img-container">
-              <picture>
-                <source media="(min-width: 1280px)"
-                srcset="img/solov-mon-dt.jpg">
-                <source media="(min-width: 767px)"
-                srcset="img/solov-mon-tab.jpg">
-                <img class="main-slider__slide-img" src="img/solov-mon-m.jpg" alt="photo" width="250" height="157">
-              </picture>
-            </div>
-            <div class="main-slider__slide-text-wrapper">
-              <h3 class="main-slider__slide-title">Соловецький монастир</h3>
-              <span class="main-slider__slide-location">Тернопільська область</span>
-              <a href="" class="read-more-link  read-more-link--slider  read-more-link--slider-right">детальніше</a>
-            </div>
-          </section>
-
-          <section class="main-slider__slide  swiper-slide">
-            <h4 class="visually-hidden">Слайд</h4>
-            <span class="main-slider__slide-num">9.</span>
-            <div class="main-slider__img-container">
-              <picture>
-                <source media="(min-width: 1280px)"
-                srcset="img/teresch-castle-dt.jpg">
-                <source media="(min-width: 767px)"
-                srcset="img/teresch-castle-tab.jpg">
-                <img class="main-slider__slide-img" src="img/teresch-castle-m.jpg" alt="photo" width="250" height="157">
-              </picture>
-            </div>
-            <div class="main-slider__slide-text-wrapper">
-              <h3 class="main-slider__slide-title">Замок Терещенко</h3>
-              <span class="main-slider__slide-location">Житомирська область</span>
-              <a href="" class="read-more-link  read-more-link--slider">детальніше</a>
-            </div>
-          </section>
-
-          <section class="main-slider__slide  swiper-slide">
-            <h4 class="visually-hidden">Слайд</h4>
-            <span class="main-slider__slide-num">10.</span>
-            <div class="main-slider__img-container">
-              <picture>
-                <source media="(min-width: 1280px)"
-                srcset="img/solov-mon-dt.jpg">
-                <source media="(min-width: 767px)"
-                srcset="img/solov-mon-tab.jpg">
-                <img class="main-slider__slide-img" src="img/solov-mon-m.jpg" alt="photo" width="250" height="157">
-              </picture>
-            </div>
-            <div class="main-slider__slide-text-wrapper">
-              <h3 class="main-slider__slide-title">Соловецький монастир</h3>
-              <span class="main-slider__slide-location">Тернопільська область</span>
-              <a href="" class="read-more-link  read-more-link--slider  read-more-link--slider-right">детальніше</a>
-            </div>
-          </section>
-
-          <section class="main-slider__slide  swiper-slide">
-            <h4 class="visually-hidden">Слайд</h4>
-            <span class="main-slider__slide-num">11.</span>
-            <div class="main-slider__img-container">
-              <picture>
-                <source media="(min-width: 1280px)"
-                srcset="img/teresch-castle-dt.jpg">
-                <source media="(min-width: 767px)"
-                srcset="img/teresch-castle-tab.jpg">
-                <img class="main-slider__slide-img" src="img/teresch-castle-m.jpg" alt="photo" width="250" height="157">
-              </picture>
-            </div>
-            <div class="main-slider__slide-text-wrapper">
-              <h3 class="main-slider__slide-title">Замок Терещенко</h3>
-              <span class="main-slider__slide-location">Житомирська область</span>
-              <a href="" class="read-more-link  read-more-link--slider">детальніше</a>
-            </div>
-          </section>
-
-          <section class="main-slider__slide  swiper-slide">
-            <h4 class="visually-hidden">Слайд</h4>
-            <span class="main-slider__slide-num">12.</span>
-            <div class="main-slider__img-container">
-              <picture>
-                <source media="(min-width: 1280px)"
-                srcset="img/solov-mon-dt.jpg">
-                <source media="(min-width: 767px)"
-                srcset="img/solov-mon-tab.jpg">
-                <img class="main-slider__slide-img" src="img/solov-mon-m.jpg" alt="photo" width="250" height="157">
-              </picture>
-            </div>
-            <div class="main-slider__slide-text-wrapper">
-              <h3 class="main-slider__slide-title">Соловецький монастир</h3>
-              <span class="main-slider__slide-location">Тернопільська область</span>
-              <a href="" class="read-more-link  read-more-link--slider  read-more-link--slider-right">детальніше</a>
-            </div>
-          </section>
-
+        <div class="guards-content__video-wrapper">
+          <video src="" width="100%" height="auto" poster="img/video-poster-mobile@1x.jpg">
+          </video>
+          <div class="guards-content__video-control">
+            <img src="img/video-play-control@1x.png" alt="Play video" width="90" height="90">
+          </div>
         </div>
+
+        <section class="guards-content__text-block">
+          <h2>Шепотом</h2>
+          <p><span><strong>Иосиф Бартош — художник,</strong></span> и его кисти принадлежит портрет Илоны, о котором я рассказывала только что.</p>
+          <p>Иосиф взял Замок в аренду на 49 лет с целью постепенной реставрации, фактически, за собственный счет. Вместе с женой, Татьяной, они пишут картины, проводят экскурсии, Татьяна, помимо этого, владеет уникальной техникой росписи «писанок» — среди ее заказчиков много известных украинских политиков, деятелей культуры, коллекционеров. Деньги с продажи своих работ художники пускают на реставрационные работы, которым конца-края не видно.</p>
+          <p>Живут они тут же, в одной из холодных, не отапливаемых комнат замка. И молча, не жалуясь и не прося, несут свою миссию.</p>
+        </section>
+
+        <section class="guards-content__img">
+          <img src="img/bartosh-01-mobile@1x.jpg" alt="" width="320" height="480" >
+        </section>
+
+        <section class="guards-content__text-block">
+          <p><strong>Сейчас этот Замок считается одним из самых сильных Мест Любви в мире.</strong></p>
+          <p>Памятник любви Илоны и Имре, которые поженились, несмотря на запреты и всеобщее осуждение.</p>
+          <p>В обмен на этот выбор у Княгини забрали всё - включая детей. И мужа. Умерла она в изгнании, не дожив несколько месяцев до священной освободительной войны, которую возглавил её сын.</p>
+        </section>
+
+        <section class="guards-content__img">
+          <img src="img/bartosh-02-mobile@1x.jpg" alt="" width="320" height="214">
+        </section>
+
+        <section class="guards-content__text-block">
+          <p>Иосиф Бартош рассказал нам, что иногда здесь проводят свадебные обряды, и те пары, кому посчастливилось - любят друг друга вечно.</p>
+          <p><strong>А еще он сказал, "что у настоящей женщины внутри всегда сидит небольшой дьявол".</strong></p>
+        </section>
+
       </article>
 
     </main>
+
 
   </div>
 

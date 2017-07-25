@@ -19,25 +19,23 @@
 
 .main-slider__slide {
   width: 250px;
+  transition: all 0.7s ease;
 
   &:last-child {
     margin-right: 0;
   }
 
   @media screen and @tablet-width {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
     padding-bottom: 40px;
+  }
+}
 
-    /* &:nth-child(even) {
-      transform: translateY(35px);
+.main-slider__img-container {
+  margin-bottom: 25px;
+  overflow: hidden;
 
-      .main-slider__slide-text-wrapper {
-        padding-left: 18%;
-        color: @white;
-      }
-    } */
+  @media screen and @desktop-width {
+    margin-bottom: 30px;
   }
 }
 
@@ -45,13 +43,16 @@
   display: block;
   width: 100%;
   height: auto;
-  margin-bottom: 25px;
+  transition: all 0.5s ease;
 
   outline: 1px solid black;
 
-  @media screen and @desktop-width {
-    margin-bottom: 30px;
+  &:hover {
+    transform: scale(1.1);
+    filter: saturate(150%);
   }
+
+
 }
 
 .main-slider__slide-text-wrapper {
