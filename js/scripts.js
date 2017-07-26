@@ -166,11 +166,14 @@
       console.log(slideLeft);
       console.log(slideRight);
       // slideLeft.style.color = 'gray';
-      slideRight.style.transform = 'none';
+      slideRight.style.marginTop = 0;
+      slideRight.style.marginBottom = 35 + 'px';
       //slideLeft.childNodes[7].className = 'main-slider__slide-text-wrapper';
 
       // slideRight.style.color = 'red';
-      slideLeft.style.transform = 'translateY(' + 35 + 'px)';
+      // slideLeft.style.transform = 'translateY(' + 35 + 'px)';
+      slideLeft.style.marginTop = 35 + 'px';
+      slideLeft.style.marginBottom = 0;
       //slideRight.childNodes[7].className = 'main-slider__slide-text-wrapper--right';
     }
 
