@@ -3,8 +3,23 @@
 
 <head>
   <meta charset="utf-8"/>
-  <meta name="description" content="">
+  <!-- <meta name="description" content=""> -->
+  <!-- <meta name="author" content=""/> -->
+  <!-- <meta name="copyright" content="(c)"> -->
+  <!-- <meta http-equiv="Reply-to" content="mail@emal.org"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="MobileOptimized" content="320">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="img/favicons/manifest.json">
+  <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico">
+  <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
   <title>12 Вартових: Главная</title>
   <script>
@@ -54,13 +69,50 @@
   <div class="gradient-bg">
 
     <header class="page-header">
+
       <nav class="main-nav">
         <div class="container  main-nav__top">
 
-          <section class="main-nav__lang-switcher">
+          <!-- <section class="main-nav__lang-switcher">
             <a href="" class="main-nav__switch  main-nav__switch--ua  main-nav__switch--active">ua</a>
             <a href="" class="main-nav__switch  main-nav__switch--ru">ru</a>
             <a href="" class="main-nav__switch  main-nav__switch--en">en</a>
+          </section> -->
+
+          <section class="main-nav__sponsor">
+            <article class="main-nav__skoda">
+              <a href="">
+                <picture>
+                  <source media="(min-width: 1280px)"
+                  srcset="img/skoda-logo-desktop@1x.png">
+                  <source media="(min-width: 768px)"
+                  srcset="img/skoda-logo-tablet@1x.png">
+                  <img src="img/skoda-logo-mobile@1x.png" alt="" width="111" height="31">
+                </picture>
+              </a>
+            </article>
+            <article class="main-nav__okko">
+              <a href="">
+                <picture>
+                  <source media="(min-width: 1280px)"
+                  srcset="img/okko-logo-desktop@1x.png">
+                  <source media="(min-width: 768px)"
+                  srcset="img/okko-logo-tablet@1x.png">
+                  <img src="img/okko-logo-mobile@1x.png" alt="" width="76" height="21">
+                </picture>
+              </a>
+            </article>
+            <article class="main-nav__kievstar">
+              <a href="">
+                <picture>
+                  <source media="(min-width: 1280px)"
+                  srcset="img/kievstar-logo-desktop@1x.png">
+                  <source media="(min-width: 768px)"
+                  srcset="img/kievstar-logo-tablet@1x.png">
+                  <img src="img/kievstar-logo-mobile@1x.png" alt="" width="90" height="28">
+                </picture>
+              </a>
+            </article>
           </section>
 
           <section class="main-nav__top-logo">
@@ -83,9 +135,13 @@
         </div>
 
         <ul class="main-nav__items  main-nav__items--opened">
+
           <li class="main-nav__logo-box">
-            <img class="main-nav__logo-menu" src="img/12-guards-logo.svg" alt="12 Вартових" width="55" height="93">
+            <a class="main-nav__logo-menu-link" href="#">
+              <img class="main-nav__logo-menu" src="img/12-guards-logo.svg" alt="12 Вартових" width="160">
+            </a>
           </li>
+
           <li class="container  main-nav__menu-inner">
             <section class="pagination">
               <div class="pagination__numbers  pagination__numbers--nav  swiper-pagination-nav">
@@ -160,6 +216,7 @@
               </div>
             </section>
           </li>
+
           <li class="main-nav__item">
             <a href="">12 Вартових</a>
           </li>
@@ -181,6 +238,13 @@
           <li class="main-nav__item">
             <a href="">Контакты</a>
           </li>
+          <li class="main-nav__item  main-nav__item--lang">
+            <section class="main-nav__lang-switcher">
+              <a href="" class="main-nav__switch  main-nav__switch--ua  main-nav__switch--active">ua</a>
+              <a href="" class="main-nav__switch  main-nav__switch--ru">ru</a>
+              <a href="" class="main-nav__switch  main-nav__switch--en">en</a>
+            </section>
+          </li>
           <li class="main-nav__item  main-nav__item--social">
             <article class="social-links">
               <a class="social-links__link" href="https://facebook.com" target="_blank">
@@ -201,25 +265,34 @@
             </article>
           </li>
 
-          <li class="main-nav__lang-switcher-wrapper">
+          <!-- <li class="main-nav__lang-switcher-wrapper">
             <section class="main-nav__lang-switcher">
               <a href="" class="main-nav__switch  main-nav__switch--ua  main-nav__switch--active">ua</a>
               <a href="" class="main-nav__switch  main-nav__switch--ru">ru</a>
               <a href="" class="main-nav__switch  main-nav__switch--en">en</a>
             </section>
-          </li>
+          </li> -->
         </ul>
       </nav>
 
       <article class="page-header__block">
-        <div class="container">
+
+        <div class="page-header__text-wrapper">
+
+          <div class="page-header__img-wrapper">
+            <img class="page-header__img" src="img/header-temp.jpg" alt="" width="747" height="498">
+          </div>
+
           <h1 class="page-header__title">
             <a href="index.html">
               <img src="img/12-guards-logo.svg" alt="12 Вартових" width="55" height="93">
             </a>
           </h1>
-          <p>Коли минуле зустрічається з теперішнім, щоб змінити майбутнє... </p>
+
+          <span class="page-header__intro">Коли минуле зустрічається з теперішнім, щоб змінити майбутнє... </span>
+
         </div>
+
       </article>
 
     </header><!-- /header -->
@@ -230,7 +303,7 @@
 
         <div class="container  follow-us">
           <div class="follow-us__soc-link-wrapper" id="follow-us-sticky">
-            <a class="follow-us__soc-link">слідкуй за нами
+            <a class="follow-us__soc-link">Поділитися
               <!-- <svg class="follow-us__plus  follow-us__plus--close  follow-us__plus--open" width="16" height="16">
                 <use xlink:href="#plus"/>
               </svg> -->
@@ -244,7 +317,7 @@
               </a>
               <a class="social-links__link" href="https://www.instagram.com/" target="_blank">
                 <svg class="social-links__icon  social-links__icon--insta" width="30" height="30">
-                  <use xlink:href="#insta"/>
+                  <use xlink:href="#insta" />
                 </svg>
               </a>
               <a class="social-links__link" href="https://www.youtube.com/" target="_blank">
@@ -647,18 +720,31 @@
     <div class="partners__slider-wrapper">
 
       <div class="partners__slide">
-        <a class="partners__link" href="http://trip-for-you.top" target="_blank">
+        <a class="partners__link" href="" target="_blank">
           <picture>
             <source media="(min-width: 1280px)"
-                srcset="img/trip-for-you-logo-dt.png">
-            <img src="img/trip-for-you-logo-m.png" alt="Trip for You logo" width="230" height="121">
+                srcset="img/skoda-logo-desktop@1x.png">
+            <source media="(min-width: 768px)"
+                srcset="img/skoda-logo-tablet@1x.png">
+            <img class="partners__img-skoda" src="img/skoda-logo-mobile@1x.png" alt="" width="111" height="31">
           </picture>
         </a>
-        <a class="partners__link" href="https://www.yieldplanet.com" target="_blank">
+        <a class="partners__link" href="" target="_blank">
           <picture>
             <source media="(min-width: 1280px)"
-                srcset="img/yieldplanet-logo-dt.png">
-            <img src="img/yieldplanet-logo-m.png" alt="yieldPlanet logo" width="230" height="121">
+                srcset="img/okko-logo-desktop@1x.png">
+            <source media="(min-width: 768px)"
+                srcset="img/okko-logo-tablet@1x.png">
+            <img class="partners__img-okko" src="img/okko-logo-mobile@1x.png" alt="" width="76" height="21">
+          </picture>
+        </a>
+        <a class="partners__link" href="" target="_blank">
+          <picture>
+            <source media="(min-width: 1280px)"
+                srcset="img/kievstar-logo-desktop@1x.png">
+            <source media="(min-width: 768px)"
+                srcset="img/kievstar-logo-tablet@1x.png">
+            <img class="partners__img-kievstar" src="img/kievstar-logo-mobile@1x.png" alt="" width="90" height="28">
           </picture>
         </a>
       </div>
@@ -671,11 +757,23 @@
   <footer class="page-footer">
     <div class="container">
       <p class="page-footer__text">
-        Формально – чужі, офіційно – державні. <br> Наречені історичними пам’ятками, без шансів на відновлення. Це споруди, що оберігаються простими людьми. Тими, хто мав честь народитися у тій частині географії.
+        Формально — чужі, офіційно — державні. <br>Наречені історичними пам’ятками, без шансів на відновлення. Це споруди, що оберігаються простими людьми. Тими, хто мав честь народитися у тій частині географії.
       </p>
       <form action="/" method="post" class="subscription">
         <div class="subscription__inner">
-          <img src="img/12-guards-logo.svg" alt="12 Вартових" width="67" height="112">
+
+          <div class="subscription__logo-container">
+            <a href="https://findinukraine.com.ua/12">
+              <img src="img/12-guards-logo.svg" alt="12 Вартових" width="67" height="112">
+            </a>
+            <a href="https://findinukraine.com.ua">
+              <img src="img/find-in-ukraine-logo.png" alt="Найдено в Укрвине" width="152" height="36">
+            </a>
+            <a href="">
+              <img src="img/umh-group-logo.png" alt="UMH-Group" width="124" height="35">
+            </a>
+          </div>
+
           <div class="subscription__input-wrapper">
             <h2 class="subscription__title">Підписатись <br>на новини</h2>
             <input class="subscription__input" id="subscription__email-field" type="text" name="email" placeholder="Ваш Email">
@@ -713,8 +811,8 @@
           <img class="copyrights__logo" src="img/12-guards-logo.svg" alt="12 Вартових" width="48" height="81">
         </div>
         <div class="copyrights__text">
+          <a class="copyrights__findin" href="http://findinukraine.com" target="_blank">© 2017 — Знайдено в Україні. Всі права захищено</a>
           <a class="copyrights__link" href="it-doors.com" target="_blank">
-            <span>© 12 ВАРТОВИХ by</span>
             <img src="img/it-doors-logo.svg" alt="IT Doors logo" width="49.28" height="18">
           </a>
       </div>

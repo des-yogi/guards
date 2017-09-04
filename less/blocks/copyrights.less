@@ -1,3 +1,10 @@
+.copyrights {
+
+  @media (min-width: 500px) {
+    padding: 0 9.7656%;
+  }
+}
+
 .copyrights__logo-wrapper {
   width: 100%;
   margin-bottom: 50px;
@@ -19,27 +26,15 @@
 
 .copyrights__text {
 
-  a {
-    font-size: 8px;
-    text-transform: uppercase;
-    color: @white;
-
-    @media screen and @tablet-width {
-      font-size: 14px;
-    }
-  }
-
-  span {
-    display: inline-block;
-    vertical-align: top;
-    padding-top: 5px;
-
-    @media screen and @tablet-width {
-      padding-bottom: 5px;
-    }
-  }
-
   img {
+    width: 55px;
+    height: 20px;
+    filter: grayscale(100%);
+
+    &:hover {
+      filter: none;
+    }
+
     @media screen and @tablet-width {
       width: 88px;
       height: 32px;
@@ -48,10 +43,23 @@
   }
 }
 
+.copyrights__findin {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 10px;
+  text-align: center;
+  color: @white;
+
+  @media screen and @tablet-width {
+    font-size: 14px;
+  }
+}
+
 .copyrights__link {
   display: block;
   width: 140px;
   margin: auto;
+  text-align: center;
 
   @media screen and @tablet-width {
     width: auto;

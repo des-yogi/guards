@@ -1,5 +1,5 @@
 .follow-us {
-  display: none;
+  margin-bottom: 60px;
 
   @media screen and @tablet-width {
     display: flex;
@@ -49,11 +49,11 @@
 
 .follow-us__plus {
   position: absolute;
-  top: 8px;
-  left: 140px;
+  top: 6px;
+  left: 100px;
   display: block;
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 22px;
 
   &--close {
     // fill: @title-color;
@@ -65,13 +65,20 @@
   &--open {
     // fill: @pink;
     // background: url(../img/plus.png) no-repeat 50% 50%;
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAySURBVHgB7c8xCgAACAJAf9n/5x5RNLQ2JESDgpscCAxxs6hiGwFXQI+25QH6goAHQAIsjJuhMQpWUQAAAABJRU5ErkJggg==) no-repeat 50% 50%;
+    background: url(../img/sharing.svg) no-repeat 50% 50%;
   }
 }
 
 .follow-us__inner {
-  position: relative;
-  width: 59.89%;
+  display: none;
+
+  @media screen and @tablet-width {
+    display: block;
+    position: relative;
+    width: 59.89%;
+    overflow: hidden;
+  }
+
 
   @media screen and @desktop-width {
     width: 54%;

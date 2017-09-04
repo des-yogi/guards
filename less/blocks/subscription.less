@@ -15,25 +15,42 @@
 
 .subscription__inner {
 
-  img {
+  /* img {
     display: none;
 
     @media screen and @tablet-width {
       display: block;
-      margin-right: 10%;
     }
 
     @media screen and @desktop-width {
       width: 110px;
       height: 184.68px;
     }
-  }
+  } */
 
   @media screen and @tablet-width {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+  }
+}
+
+.subscription__logo-container {
+  display: none;
+
+  a {
+    @media screen and @tablet-width {
+      display: block;
+      margin-bottom: 15px;
+    }
+  }
+
+  @media screen and @tablet-width {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    // margin-right: 10%;
   }
 }
 
@@ -81,7 +98,7 @@
   }
 
   @media screen and @tablet-width {
-    width: 77.5%;
+    width: 76%;
     margin-right: auto;
 
     // outline: 1px solid @white;
@@ -141,7 +158,7 @@
   margin-bottom: 45px;
   font-size: 18px;
   font-weight: 700;
-  color: @pink;
+  color: @white;
   background: none;
   border: none;
   cursor: pointer;

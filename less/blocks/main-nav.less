@@ -13,6 +13,61 @@
   // outline: 1px solid gray;
 }
 
+.main-nav__sponsor {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main-nav__skoda,
+.main-nav__okko {
+  margin-right: 15px;
+
+  @media @tablet-width {
+    margin-right: 35px;
+  }
+
+  @media @desktop-width {
+    margin-right: 70px;
+  }
+}
+
+.main-nav__skoda,
+.main-nav__okko,
+.main-nav__kievstar {
+  filter: grayscale(100%);
+
+  &:hover {
+    filter: none;
+  }
+}
+
+.main-nav__skoda {
+  width: 72px;
+
+  @media @tablet-width {
+    width: 110px;
+  }
+}
+
+.main-nav__okko {
+  width: 48px;
+  padding-top: 4px;
+
+  @media @tablet-width {
+    width: 75px;
+    padding-top: 6px;
+  }
+}
+
+.main-nav__kievstar {
+  width: 65px;
+
+  @media @tablet-width {
+    width: 90px;
+  }
+}
+
 .main-nav__top-logo {
   display: none;
 }
@@ -92,15 +147,19 @@
 .main-nav__switch {
   position: relative;
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 35px;
   font-size: 14px;
   font-weight: 400;
   color: @text-color;
   text-transform: uppercase;
 
+  &:last-child {
+    margin-right: 0;
+  }
+
   &--active {
     font-weight: 800;
-    color: @pink;
+    color: @pink!important;
   }
 
   &:hover {
@@ -111,8 +170,8 @@
   &--ua::before,
   &--ru::before {
     position: absolute;
-    top: 7px;
-    left: 24px;
+    top: 8px;
+    left: 36px;
     content: "";
     width: 15px;
     height: 1px;
@@ -120,14 +179,14 @@
     transform: rotate(-60deg);
 
     @media screen and @tablet-width {
-      top: 11px;
-      left: 36px;
-      width: 20px;
+      // top: 11px;
+      // left: 36px;
+      // width: 20px;
     }
   }
 
   @media screen and @tablet-width {
-    margin-right: 25px;
+    // margin-right: 25px;
     font-size: 20px;
   }
 }
@@ -148,30 +207,31 @@
   &--opened {
     // открывает меню
     display: block;
+    flex-direction: column;
     // top: 70px;
     animation: fadeInDown 0.6s both;
 
     // outline: 1px solid gray;
+
+    @media screen and @tablet-width {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
   }
 
-  .main-nav__lang-switcher {
-    display: none;
+  /* .main-nav__lang-switcher {
 
     @media screen and @desktop-width {
       display: block;
       margin-top: 100px;
       .container-desktop();
     }
-  }
+  } */
 }
 
 .main-nav__item {
   margin-bottom: 26px;
-
-  &:last-child {
-    margin-bottom: 0;
-    margin-top: 60px;
-  }
 
   a {
     font-size: 16px;
@@ -181,35 +241,62 @@
     &:hover {
       color: @pink;
     }
+
+    @media screen and @tablet-width {
+      font-size: 20px;
+    }
   }
 
   &--social {
-      margin-bottom: 0;
-      margin-top: 62px;
+    margin-bottom: 0;
+    margin-top: 60px;
+  }
+
+  @media screen and @tablet-width {
+
+    &--social {
+      order: -1;
+      margin-top: 20px;
+      margin-left: 20px;
+      margin-right: auto;
+      margin-bottom: 90px;
+    }
   }
 
   @media screen and @desktop-width {
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 35px;
+    // position: relative;
+    // display: inline-block;
+    // vertical-align: top;
+    // margin: 0 35px;
 
     &--social {
-      position: relative;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
 
-    a {
-      font-size: 18px;
+    &--lang {
+      @media screen and @desktop-width {
+        margin-top: 30px;
+      }
     }
   }
 }
 
 .main-nav__logo-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
-  padding: 20px;
   padding-bottom: 45px;
+
+  img {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  @media screen and @tablet-width {
+    padding-bottom: 95px;
+  }
 
   @media screen and @desktop-width {
     padding-bottom: 95px;
@@ -218,13 +305,21 @@
 }
 
 .main-nav__logo-menu {
-  margin: 0 auto;
+  // margin: 0 auto;
   // transform: translateX(-50%);
 
   @media screen and @desktop-width {
-    width: 88px;
-    height: 139.5px;
+    width: 191px;
+    height: 77px;
     margin-top: 65px;
+  }
+}
+
+.main-nav__logo-menu-link {
+
+  @media screen and @tablet-width {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
