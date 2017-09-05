@@ -18,6 +18,15 @@
 .guards-content__video-wrapper {
   position: relative;
 
+  @media screen and @tablet-width {
+    float: right;
+    width: 290px;
+    height: 195px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+
   @media screen and @desktop-width {
     float: right;
     width: 505px;
@@ -51,6 +60,12 @@
     letter-spacing: 0.9px;
     color: @title-color;
 
+    @media screen and @tablet-width {
+      margin-left: 40px;
+      margin-bottom: 35px;
+      font-size: 24px;
+    }
+
     @media screen and @desktop-width {
       margin-bottom: 105px;
       font-size: 42px;
@@ -58,10 +73,12 @@
     }
   }
 
+
   p {
     margin-bottom: 15px;
 
-    @media screen and @desktop-width {
+    @media screen and @tablet-width {
+      margin-left: 60px;
       font-size: 18px;
     }
   }
@@ -73,6 +90,30 @@
 
     @media screen and @desktop-width {
       font-size: 24px;
+    }
+  }
+
+  @media screen and @tablet-width {
+    padding-top: 0;
+
+    &--first {
+      margin-left: 0;
+    }
+
+    &--second {
+      padding-top: 0;
+      padding-left: 0;
+    }
+
+    &--third {
+      // clear: both;
+      position: relative;
+      width: 415px;
+      margin-left: 0;
+      padding-top: 0;
+      padding-left: 0!important;
+      padding-right: 0!important;
+      .clearfix();
     }
   }
 
@@ -112,26 +153,42 @@
     height: auto;
   }
 
+  @media screen and @tablet-width {
+
+    &--first {
+      float: left;
+      width: 290px;
+      height: 435px;
+      margin-right: 80px;
+      margin-bottom: 30px;
+    }
+
+    &--second {
+      // float: right;
+      // transform: translate(525px, -400px);
+      width: 415px;
+      height: 275px;
+      margin-left: 80px;
+      margin-bottom: 30px;
+      margin-left: auto;
+
+    }
+  }
+
   @media screen and @desktop-width {
 
     &--first {
       float: left;
-
-      img {
-        width: 505px;
-        height: 757px;
-      }
+      width: 505px;
+      height: 757px;
     }
 
     &--second {
       float: right;
       // transform: translate(525px, -400px);
       // margin-bottom: -400px;
-
-      img {
-        width: 715px;
-        height: 478px;
-      }
+      width: 715px;
+      height: 478px;
     }
   }
 

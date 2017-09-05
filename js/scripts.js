@@ -61,24 +61,25 @@
       menuOpenBtn.style.display = 'none';
       menuCloseBtn.style.display = 'block';
 
-      var swiperN = new Swiper('.swiper-container-nav', {
-
-        initialSlide: 0,
-        slidesPerView: 4,
-        spaceBetween: 20,
-        autoplay: 2000,
-        // autoplayDisableOnInteraction: true,
-        loop: true,
-        grabCursor: true,
-        pagination: '.swiper-pagination-nav',
-        paginationClickable: true,
-        paginationBulletRender: function (swiper, index, className) {
-          return '<span class="' + className + '">' + (index + 1) + '</span>';
-        }
-
-      });
     }
   };
+
+  var swiperN = new Swiper('.swiper-container-nav', {
+
+    initialSlide: 0,
+    slidesPerView: 4,
+    spaceBetween: 20,
+    //autoplay: 2000,
+    // autoplayDisableOnInteraction: true,
+    loop: true,
+    grabCursor: true,
+    pagination: '.swiper-pagination-nav',
+    paginationClickable: true,
+    paginationBulletRender: function (swiper, index, className) {
+      return '<span class="' + className + '">' + (index + 1) + '</span>';
+    }
+
+  });
 
   var swiper = new Swiper('.swiper-container', {
     initialSlide: 0,
@@ -178,32 +179,6 @@
     }
 
   });
-
-  $("#sticky_burger").stick_in_parent(
-        {
-          parent: '#sticky-wrapper',
-          offset_top: 20,
-          spacer: false
-        }
-      );
-
-  $("#follow-us-sticky").stick_in_parent(
-    {
-      parent: '#sticky-wrapper',
-      offset_top: 20,
-    }
-  );
-
-
-  $("#follow-us-toggler").stick_in_parent(
-    {
-      parent: '#hero-main-block-wrapper',
-      offset_top: 20,
-      spacer: false
-    }
-  );
-
-
 
   window.addEventListener('DOMContentLoaded', function (e) {
     if (menuItems.classList.contains('main-nav__items--opened')) {

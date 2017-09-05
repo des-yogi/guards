@@ -4,7 +4,12 @@
   &--keepers {
     padding-bottom: 55px;
 
-    @media screen and @desktop-width {
+    @media screen and @tablet-width {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      width: auto;
+      transform: translateY(-77px);
       padding: 0;
     }
   }
@@ -44,10 +49,12 @@
   }
 
   &--keepers {
-    position: absolute;
-    top: -938px;
-    left: 50%;
-    margin-left: -30px;
+
+    @media screen and @desktop-width {
+      position: absolute;
+      top: -895px;
+      left: 50%;
+    }
   }
 }
 

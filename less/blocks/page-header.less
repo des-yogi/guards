@@ -15,7 +15,7 @@
   width: auto;
   min-height: 200px;
   background-color: lightgray;
-  overflow: hidden;
+
   /* padding-top: 20px;
   padding-bottom: 50px;
   margin-bottom: 65px;
@@ -52,6 +52,7 @@
 .page-header__img-wrapper {
   position: relative;
   min-height: 200px;
+  overflow: hidden;
 
   &::after {
     position: absolute;
@@ -62,6 +63,7 @@
     height: 100%;
     background: linear-gradient(15deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0.1) 60%, transparent);
   }
+
 }
 
 .page-header__img {
@@ -72,14 +74,15 @@
   object-fit: cover;
 
   @media screen and @tablet-width {
-    // height: 400px;
-    height: auto;
+    // height: 450px;
+    // height: auto;
   }
 
   @media screen and @desktop-width {
-    // height: 665px;
-    height: auto;
+    height: 665px;
+    // height: auto;
   }
+
 }
 
 .page-header__text-wrapper {
@@ -101,21 +104,12 @@
   img {
     display: block;
     width: 135px;
-  }
 
-  @media screen and @tablet-width {
-    // margin-bottom: 120px;
-    // transform: translate(-10px, -10px);
-  }
-
-  @media screen and @desktop-width {
-    // margin-bottom: 255px;
-
-    img {
-      width: 75px;
-      height: 126px;
+    @media screen and @desktop-width {
+      width: 190px;
     }
   }
+
 }
 
 .page-header__intro {
@@ -132,12 +126,14 @@
   color:  @white;
 
   @media screen and @tablet-width {
-    padding: 0 6.5%;
-    font-size: 28px;
+    bottom: 60px;
+    padding: 0 8.5%;
+    font-size: 25px;
   }
 
   @media screen and @desktop-width {
-    font-size: 50px;
+    bottom: 85px;
+    font-size: 42px;
   }
 }
 

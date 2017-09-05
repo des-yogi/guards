@@ -1,5 +1,18 @@
 .join-up {
-  display: none;
+  // display: none;
+  .text-hide();
+  position: fixed;
+  z-index: 50;
+  bottom: 0;
+  right: 0;
+  display: block;
+  padding: 9px;
+  background-color: @pink;
+
+  img {
+    width: 18px;
+    height: 18px;
+  }
 
   @media screen and @tablet-width {
     position: fixed;
@@ -20,6 +33,11 @@
       font-weight: 700;
       text-transform: uppercase;
       color: @white;
+    }
+
+    img {
+      width: 26px;
+      height: 26px;
     }
 
     &:hover {
