@@ -284,7 +284,11 @@
         <div class="page-header__text-wrapper">
 
           <div class="page-header__img-wrapper">
-            <img class="page-header__img" src="img/header-temp.jpg" alt="" width="747" height="498">
+            <picture>
+              <source media="(min-width: 1280px)"
+                    srcset="img/header-desktop@1x.jpg">
+              <img class="page-header__img" src="img/header-mobile@1x.jpg" alt="" width="932" height="500" >
+            </picture>
           </div>
 
           <h1 class="page-header__title">

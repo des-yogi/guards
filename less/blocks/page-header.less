@@ -35,7 +35,7 @@
     // height: 665px;
   }
 
-  &--keepers {
+  /* &--keepers {
     margin-bottom: 60px;
     min-height: 499px;
     background-image: url(../img/guards-hero-bartosh-mobile@1x.jpg);
@@ -46,7 +46,7 @@
       background-image: url(../img/guards-hero-bartosh-desktop@1x.jpg);
       background-position: 0 center;
     }
-  }
+  } */
 }
 
 .page-header__img-wrapper {
@@ -75,12 +75,12 @@
 
   @media screen and @tablet-width {
     // height: 450px;
-    // height: auto;
+    height: auto;
   }
 
   @media screen and @desktop-width {
-    height: 665px;
-    // height: auto;
+    // height: 665px;
+    height: auto;
   }
 
 }
@@ -146,33 +146,62 @@
 }
 
 .page-header__text {
-  letter-spacing: 1px;
+  /* letter-spacing: 1px;
   color: @white;
   transform: translateY(105px);
 
   @media screen and @desktop-width {
     padding: 0 105px;
     transform: translateY(35px);
+  } */
+
+  position: absolute;
+  left: 0;
+  bottom: 65px;
+  padding-left: 20px;
+  padding-right: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: @white;
+
+  @media screen and @tablet-width {
+    bottom: 60px;
+    padding: 0 60px;
+    font-size: 25px;
+  }
+
+  @media screen and @desktop-width {
+    bottom: 85px;
+    padding: 0 105px;
+    font-size: 42px;
   }
 }
 
 .page-header__guards {
   margin-bottom: 25px;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 900;
   text-transform: uppercase;
 
+  @media screen and @tablet-width {
+    font-size: 28px;
+  }
+
   @media screen and @desktop-width {
-    font-size: 50px;
+    font-size: 42px;
   }
 }
 
 .page-header__location {
-  margin-bottom: 10px;
-  font-size: 24px;
+  // margin-bottom: 10px;
+  font-size: 18px;
   font-weight: 700;
 
+  @media screen and @tablet-width {
+    font-size: 24px;
+  }
+
   @media screen and @desktop-width {
-    font-size: 40px;
+    font-size: 38px;
   }
 }
