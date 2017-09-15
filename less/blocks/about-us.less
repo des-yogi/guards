@@ -31,8 +31,9 @@
   @media (min-width: 640px) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
+    align-content: flex-start;
   }
 
   @media (min-width: 1160px) {
@@ -51,16 +52,22 @@
 
   // outline: 1px solid gray;
 
+  &:last-child {
+    // align-self: flex-start;
+    // margin-right: auto;
+
+  }
+
   @media (min-width: 640px) {
     width: 49%;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 4%;
+    // margin-bottom: 4%;
   }
 
   @media @tablet-width {
     width: 32.5%;
-    margin-bottom: 3%;
+    margin-bottom: 30px;
   }
 }
 
@@ -68,7 +75,7 @@
   width: 100%;
   height: auto;
   overflow: hidden;
-  border: 10px solid @white;
+  border: 15px solid @white;
 
   img {
     display: block;
@@ -77,6 +84,8 @@
 
 .about-us__text {
   padding-top: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .about-us__title {
@@ -101,7 +110,7 @@
   padding-right: 10px;
   margin-bottom: 10px;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.6;
 
   @media @tablet-width {
     font-size: 15px;
