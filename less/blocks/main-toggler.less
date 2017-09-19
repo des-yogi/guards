@@ -48,12 +48,13 @@
     transform: translateX(-2px);
   }
 
-  &--keepers {
+   &--keepers {
 
-    @media screen and @desktop-width {
-      position: absolute;
-      top: -875px;
-      left: 50%;
+    @media screen and @tablet-width {
+
+      a {
+        color: @title-color;
+      }
     }
   }
 }
@@ -77,20 +78,25 @@
     font-size: 20px;
   }
 
+  &:hover {
+    text-decoration: underline;
+  }
+
   &--active {
     font-weight: 900;
     text-decoration: underline;
   }
 
   &--castle {
-    padding-right: 50px;
+    // padding-right: 50px;
+    padding-right: 16.055%;
     text-shadow:
       -1px -1px 0 #fff,
        1px -1px 0 #fff,
       -1px  1px 0 #fff,
        1px  1px 0 #fff;
 
-    &::after {
+    /* &::after {
       position: absolute;
       top: 9px;
       left: 88px;
@@ -98,11 +104,42 @@
       width: 30px;
       height: 2px;
       background-color: @text-color;
+    } */
+
+    &::after {
+      position: absolute;
+      top: 9px;
+      left: 65%;
+      content: "";
+      width: 30px;
+      height: 2px;
+      background-color: @text-color;
     }
   }
 
-  &:hover {
-    text-decoration: underline;
+  &--people {
+    color: @white;
   }
 }
 
+/* .main-toggler__toggle {
+
+  &--castle {
+    padding-right: 16.055%;
+
+    &::after {
+      position: absolute;
+      top: 9px;
+      left: 65%;
+      content: "";
+      width: 30px;
+      height: 2px;
+      background-color: @text-color;
+    }
+  }
+
+  &--people {
+    color: @white;
+  }
+}
+ */

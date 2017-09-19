@@ -273,7 +273,11 @@
         <div class="page-header__text-wrapper">
 
           <div class="page-header__img-wrapper">
-            <img class="page-header__img" src="img/header-temp.jpg" alt="" width="747" height="498">
+            <picture>
+              <source media="(min-width: 768px)"
+                    srcset="img/svirzh-castle-head-desktop@1x.jpg">
+              <img class="page-header__img" src="img/svirzh-castle-head-mobile@1x.jpg" alt="Фото" width="730">
+            </picture>
           </div>
 
           <h1 class="page-header__title">
@@ -282,7 +286,10 @@
             </a>
           </h1>
 
-          <span class="page-header__intro">Коли минуле зустрічається <br> з теперішнім, <br> щоб змінити майбутнє... </span>
+          <div class="page-header__text">
+            <h2 class="page-header__guards">СВІРЖСЬКИЙ ЗАМОК</h2>
+            <span class="page-header__location">Львівська область</span>
+          </div>
 
         </div>
 
@@ -295,9 +302,6 @@
         <div class="container  follow-us">
           <div class="follow-us__soc-link-wrapper" id="follow-us-sticky">
             <a class="follow-us__soc-link">Поділитися
-              <!-- <svg class="follow-us__plus  follow-us__plus--close  follow-us__plus--open" width="16" height="16">
-                <use xlink:href="#plus"/>
-              </svg> -->
               <div class="follow-us__plus follow-us__plus--close follow-us__plus--open"></div>
             </a>
             <article class="social-links  social-links--close">
@@ -318,118 +322,213 @@
               </a>
             </article>
           </div>
-
-        </div>
-
-        <div class="container  main-toggler__wrapper  main-toggler__wrapper--keepers">
-          <div class="main-toggler  main-toggler--keepers">
-            <a href="castles.html" class="main-toggler__toggle  main-toggler__toggle--castle" target="_self">ЗАМКИ</a>
-            <a href="keepers.html" class="main-toggler__toggle  main-toggler__toggle--people  main-toggler__toggle--active" target="_self">Вартовi</a>
+          <div class="follow-us__inner">
+            <div class="main-toggler  main-toggler--keepers" id="follow-us-toggler">
+              <a href="castles.html" class="main-toggler__toggle  main-toggler__toggle--castle  main-toggler__toggle--active" target="_self">ЗАМКИ</a>
+              <a href="keepers.html" class="main-toggler__toggle  main-toggler__toggle--people" target="_self">Вартовi</a>
+            </div>
           </div>
+
         </div>
 
         <article class="guards-content">
 
-          <div class="guards-content__video-wrapper">
-            <video src="" width="100%" height="auto" poster="img/video-poster-mobile@1x.jpg">
-            </video>
-            <div class="guards-content__video-control">
-              <img src="img/video-play-control@1x.png" alt="Play video" width="90" height="90">
-            </div>
+          <h2 class="container  guards-content__title">Село Свірж, <br>Перемишлянського району, <br>
+          Львівської області</h2>
+
+          <p class="container guards-content__intro">Замок протиріч, епічно-ліричних легенд і доглянутих фото — наш перший пункт призначення у Львівській області.</p>
+
+          <div class="guards-content__img-wrapper">
+            <figure class="guards-content__img">
+              <picture>
+                <source media="(min-width: 768px)"
+                srcset="img/svirzh-castle-15@1x.jpg">
+                <img src="img/svirzh-castle-15@0,75x.jpg" alt="" width="730">
+              </picture>
+              <figcaption class="guards-content__figcaption">Фото. Краткое описание</figcaption>
+            </figure>
           </div>
 
-          <section class="container  guards-content__text-block  guards-content__text-block--first">
-            <h2>Шепотом</h2>
-            <p><span><strong>Иосиф Бартош — художник,</strong></span> и его кисти принадлежит портрет Илоны, о котором я рассказывала только что.</p>
-            <p>Иосиф взял Замок в аренду на 49 лет с целью постепенной реставрации, фактически, за собственный счет. Вместе с женой, Татьяной, они пишут картины, проводят экскурсии, Татьяна, помимо этого, владеет уникальной техникой росписи «писанок» — среди ее заказчиков много известных украинских политиков, деятелей культуры, коллекционеров. Деньги с продажи своих работ художники пускают на реставрационные работы, которым конца-края не видно.</p>
-            <p>Живут они тут же, в одной из холодных, не отапливаемых комнат замка. И молча, не жалуясь и не прося, несут свою миссию.</p>
+          <section class="container  guards-content__text-block">
+            <h3 class="guards-content__subtitle">Чому саме він?</h3>
+            <p>Згідно відповіді на запит від Львівської ОДА — цей замок відкритий для передачі у концесію. У 1997 році його було передано Національній Спілці Архітекторів України для пристосування під будинок творчості. Користувач достатньо зробив для призупинення руйнування таутворив адміністрацію замку для недопущення розкрадання, але коштів на відбудову замку недостатньо, тому ведеться пошук інвестора.</p>
           </section>
 
-          <section class="guards-content__img  guards-content__img--first">
-            <picture>
-              <source media="(min-width: 1280px)"
-                srcset="img/bartosh-01-desktop@1x.jpg">
-              <img src="img/bartosh-01-mobile@1x.jpg" alt="" width="320" height="480" >
-            </picture>
+          <div class="guards-content__img-wrapper">
+            <figure class="guards-content__img">
+              <picture>
+                <source media="(min-width: 768px)"
+                srcset="img/svirzh-castle-04@1x.jpg">
+                <img src="img/svirzh-castle-04@0,75x.jpg" alt="" width="730">
+              </picture>
+              <figcaption class="guards-content__figcaption  guards-content__figcaption--slide">Фото. Краткое описание</figcaption>
+            </figure>
+          </div>
+
+          <section class="container  guards-content__text-block">
+            <h3 class="guards-content__subtitle">Що означають офіційні папери?</h3>
+            <p>Для нас це означало лише те, що замок — відкритий для проекту, туди легко потрапити, можна домовитись про зйомки і навіть є шанс знайти там вартового — директора замку, котрий зараз виконує функції прибиральника, адміністратора, електрика, будівельника і екскурсовода.</p>
+            <p>Для всіх інших це означає те, що замок функціонує як туристичний об’єкт, відкритий для відвідувачів, але не використовується ні за яким конкретним призначенням. Коротше кажучи — останні кілька десятків років це повинен був бути центр творчості, архітектури і пленерів, але сталося тільки те, що замок досі живий і у задовільному стані.</p>
+            <p>Наскільки задовільному — можна було дізнатися лише на місці. Тому ми виїхали.</p>
           </section>
 
-          <section class="container  guards-content__text-block  guards-content__text-block--second">
-            <p><span><strong>Сейчас этот Замок считается одним из самых сильных Мест Любви в мире.</strong></span></p>
-            <p>Памятник любви Илоны и Имре, которые поженились, несмотря на запреты и всеобщее осуждение.</p>
-            <p>В обмен на этот выбор у Княгини забрали всё - включая детей. И мужа. Умерла она в изгнании, не дожив несколько месяцев до священной освободительной войны, которую возглавил её сын.</p>
+          <div class="guards-content__img-wrapper">
+            <figure class="guards-content__img">
+              <picture>
+                <source media="(min-width: 768px)"
+                srcset="img/svirzh-castle-08@1x.jpg">
+                <img src="img/svirzh-castle-08@0,75x.jpg" alt="" width="730">
+              </picture>
+              <figcaption class="guards-content__figcaption  guards-content__figcaption--slide">Фото. Краткое описание</figcaption>
+            </figure>
+          </div>
+
+          <section class="container  guards-content__text-block">
+            <blockquote>
+              <p>“Дороги — чудові, а краєвиди — тим більше, загалом це — міні Карпати”</p>
+            </blockquote>
+            <h3 class="guards-content__subtitle">Наскільки легко туди добратися.</h3>
+            <p>Легко. Особливо, якщо їдеш на Skoda Kodiaq. Але туди реально доїхати будь-яким іншим способом. Дорога до самого Свіржу, не кажучи про трасу Київ-Чоп, — у задовільному, навіть більше ніж, стані. Ми жили у селі Бібрка — за 12 км від замку, а за реквізитом і всякою необхідною для зйомок всячиною їздили у Перемишляни — 15 км, але у іншу сторону. Дороги — чудові, а краєвиди — тим більше,  загалом це — міні Карпати.</p>
+            <p>Замок включений у маршрут «Золота підкова Львівщини» — тому місце доволі активне.</p>
+            <blockquote>
+              <p>“Щоправда, навіть коли вхід у сам замок закритий — там є чим зайнятися.”</p>
+            </blockquote>
+            <p>Величезна територія, середньовічні краєвиди — особливо у світанковий час, і оборонна вежа — все, що потрібно для туристичного щастя. Власне, оборонна вежа хвилює відвідувачів навіть більше, ніж все інше — це ж і є той самий бастіон Сен-Жермен з Мушкетерів і головна принада цього місця — очевидно, що Боярський більш зрозумілий, ніж Свіржські, Цептери та інші власники замку, про яких мало що можна дізнатися, окрім того, що жили, будували. Любили?</p>
+
+            <h3 class="guards-content__subtitle">То про що він — Свіржський замок.</h3>
+            <p>Замок Свіржських, побудували Свіржські, стоїть на річці Свірж, у селі Свірж, але як на мене тепер, стільки років потому — його можна було б називати і по-іншому. Замок іронії, впертості і равликів, наприклад. Або замок, який так і не взяли турки, хоча історичні джерела сперечаються — хтось каже ні, хтось каже — так.</p>
+            <p>Очевидно тільки те, що цьому замку личить історія. Про це говорять товстезні стіни і правильні ворота — такі, як в минулих віках. А ще тут особлива енергетика, яку відчули монахи з Тибету — про це оповідає стаття біля центрального входу, наліплена прямо біля скрині для пожертв. В статті багато букв, а от скриня — практично пуста. </p>
           </section>
 
-          <section class="guards-content__img  guards-content__img--second">
-            <picture>
-              <source media="(min-width: 1280px)"
-                srcset="img/bartosh-02-desktop@1x.jpg">
-              <img src="img/bartosh-02-mobile@1x.jpg" alt="" width="320" height="214">
-            </picture>
+          <div class="guards-content__img-wrapper">
+            <figure class="guards-content__img">
+              <picture>
+                <source media="(min-width: 768px)"
+                srcset="img/svirzh-castle-14@1x.jpg">
+                <img src="img/svirzh-castle-14@0,75x.jpg" alt="" width="730">
+              </picture>
+              <figcaption class="guards-content__figcaption  guards-content__figcaption--slide">Фото. Краткое описание</figcaption>
+            </figure>
+          </div>
+
+          <section class="container  guards-content__text-block">
+            <p>Так чому іронії? — запитаєте ви. А відповідь в історії і роду Лямезан-Салянс, котрі були останніми власниками замку. Саме вони так любили це місце, що вклали в реставрацію багато грошей і років, але іронія у тому дні, коли почалася перша світова війна — саме тоді ремонтні роботи закінчились. В 1914 замок було спалено вщент разом  з усіма цінностями, родинними портретами і бібліотекою — російські військові відрізнялись особливим ставленням — вони палили все, що не могли зрозуміти.</p>
+            <p>Отут і з’являється впертість, хоча і іронія далеко не пішла — Роберт Лямезан-Салянс не збирався відступати і зайнявся реставрацією майна  по збереженим малюнкам, а робили це — російські військовополонені. Яка циклічна доля!</p>
+            <p>А до чого тут равлики? — та у тому ж роді Лямезан-Салянс — Роберт любив французьку кухню і розводив виноградних равликів, а одна з туристичних фішок цього місця в тому, що ці равлики і досі там! Живуть, розмножуються і ніхто їх не їсть. Хіба що туристи люблять на них дивитися — від них пахне віковою історією.</p>
+            <p>Це самий мирний зовні замок — подивіться на його дах, територію навколо. Хіба міг він бути неприступною фортецею, яку ніхто не міг взяти?</p>
+            <blockquote>
+              <p>“Однак, про це пишуть легенди. Найвідоміша розповідає про те, що у 1672 році кохання тут було настільки сліпим, що місцева дівчина відкрила яничару таємницю про те, як саме завоювати замок”</p>
+            </blockquote>
           </section>
 
-          <section class="container  guards-content__text-block  guards-content__text-block--third">
-            <p>Иосиф Бартош рассказал нам, что иногда здесь проводят свадебные обряды, и те пары, кому посчастливилось — любят друг друга вечно.</p>
-            <p><span><strong>А еще он сказал, "что у настоящей женщины внутри всегда сидит небольшой дьявол".</strong></span></p>
+          <div class="guards-content__img-wrapper">
+            <figure class="guards-content__img">
+              <picture>
+                <source media="(min-width: 768px)"
+                srcset="img/svirzh-castle-20@1x.jpg">
+                <img src="img/svirzh-castle-20@0,75x.jpg" alt="" width="730">
+              </picture>
+              <figcaption class="guards-content__figcaption  guards-content__figcaption--slide">Фото. Краткое описание</figcaption>
+            </figure>
+          </div>
 
-            <a class="guards-content__readmore  read-more-link" href="">
-              Замки
-            </a>
+          <section class="container  guards-content__text-block">
+            <p>Так чому іронії? — запитаєте ви. А відповідь в історії і роду Лямезан-Салянс, котрі були останніми власниками замку. Саме вони так любили це місце, що вклали в реставрацію багато грошей і років, але іронія у тому дні, коли почалася перша світова війна — саме тоді ремонтні роботи закінчились. В 1914 замок було спалено вщент разом з усіма цінностями, родинними портретами і бібліотекою — російські військові відрізнялись особливим ставленням — вони палили все, що не могли зрозуміти.</p>
+
+            <blockquote>
+              <p>“Отут і з’являється впертість, хоча і іронія далеко не пішла — Роберт Лямезан-Салянс не збирався відступати і зайнявся реставрацією майна по збереженим малюнкам, а робили це — російські військовополонені. Яка циклічна доля!”</p>
+            </blockquote>
           </section>
 
-          <article class="guards-gallery">
-            <div class="guards-gallery__container  swiper-container--galery">
-              <div class="guards-gallery__slides  swiper-wrapper">
+          <div class="guards-content__img-wrapper">
+            <figure class="guards-content__img">
+              <picture>
+                <source media="(min-width: 768px)"
+                srcset="img/svirzh-castle-20@1x.jpg">
+                <img src="img/svirzh-castle-20@0,75x.jpg" alt="" width="730">
+              </picture>
+              <figcaption class="guards-content__figcaption  guards-content__figcaption--slide">Фото. Краткое описание</figcaption>
+            </figure>
+          </div>
 
-                <div class="guards-gallery__slide  swiper-slide">
-                  <div class="guards-gallery__img-container">
-                    <picture>
-                      <source media="(min-width: 1280px)"
-                      srcset="img/guards-gallery-bartosh-desktop-01@1x.jpg">
-                      <img src="img/guards-gallery-bartosh-mobile-01@1x.jpg" alt="Галерея" width="275" height="189">
-                    </picture>
-                  </div>
-                </div>
+          <div class="guards-content__sibling-wrapper">
 
-                <div class="guards-gallery__slide  swiper-slide">
-                  <div class="guards-gallery__img-container">
-                    <picture>
-                      <source media="(min-width: 1280px)"
-                      srcset="img/guards-gallery-bartosh-desktop-02@1x.jpg">
-                      <img src="img/guards-gallery-bartosh-mobile-02@1x.jpg" alt="Галерея" width="275" height="189">
-                    </picture>
-                  </div>
-                </div>
-
-                <div class="guards-gallery__slide  swiper-slide">
-                  <div class="guards-gallery__img-container">
-                    <picture>
-                      <source media="(min-width: 1280px)"
-                      srcset="img/guards-gallery-bartosh-desktop-01@1x.jpg">
-                      <img src="img/guards-gallery-bartosh-mobile-01@1x.jpg" alt="Галерея" width="275" height="189">
-                    </picture>
-                  </div>
-                </div>
-
-                <div class="guards-gallery__slide  swiper-slide">
-                  <div class="guards-gallery__img-container">
-                    <picture>
-                      <source media="(min-width: 1280px)"
-                      srcset="img/guards-gallery-bartosh-desktop-02@1x.jpg">
-                      <img src="img/guards-gallery-bartosh-mobile-02@1x.jpg" alt="Галерея" width="275" height="189">
-                    </picture>
-                  </div>
-                </div>
-
+            <div class="container">
+              <div class="guards-content__sibling-top">
+                <span class="guards-content__sibling">Вартовий
+                </span>
+                <a class="read-more-link  guards-content__toggle" href="">Дивитися</a>
               </div>
             </div>
-            <div class="container  guards-gallery__link-container">
-              <a href="" class="guards-gallery__link  read-more-link">
-                Галерея
-              </a>
+
+            <div class="guards-content__img-wrapper  guards-content__img-wrapper--sibling-link">
+              <figure class="guards-content__img">
+                <picture>
+                  <source media="(min-width: 768px)"
+                  srcset="img/svirzh-guard-01@1x.jpg">
+                  <img src="img/svirzh-guard-01@0,75x.jpg" alt="" width="730">
+                </picture>
+              </figure>
             </div>
-          </article>
+
+            <div class="guards-content__name">Коцуленко Владимир Михайлович</div>
+
+          </div>
 
         </article>
+
+        <!-- <article class="guards-gallery">
+          <div class="guards-gallery__container  swiper-container--galery">
+            <div class="guards-gallery__slides  swiper-wrapper">
+
+              <div class="guards-gallery__slide  swiper-slide">
+                <div class="guards-gallery__img-container">
+                  <picture>
+                    <source media="(min-width: 1280px)"
+                    srcset="img/guards-gallery-bartosh-desktop-01@1x.jpg">
+                    <img src="img/guards-gallery-bartosh-mobile-01@1x.jpg" alt="Галерея" width="275" height="189">
+                  </picture>
+                </div>
+              </div>
+
+              <div class="guards-gallery__slide  swiper-slide">
+                <div class="guards-gallery__img-container">
+                  <picture>
+                    <source media="(min-width: 1280px)"
+                    srcset="img/guards-gallery-bartosh-desktop-02@1x.jpg">
+                    <img src="img/guards-gallery-bartosh-mobile-02@1x.jpg" alt="Галерея" width="275" height="189">
+                  </picture>
+                </div>
+              </div>
+
+              <div class="guards-gallery__slide  swiper-slide">
+                <div class="guards-gallery__img-container">
+                  <picture>
+                    <source media="(min-width: 1280px)"
+                    srcset="img/guards-gallery-bartosh-desktop-01@1x.jpg">
+                    <img src="img/guards-gallery-bartosh-mobile-01@1x.jpg" alt="Галерея" width="275" height="189">
+                  </picture>
+                </div>
+              </div>
+
+              <div class="guards-gallery__slide  swiper-slide">
+                <div class="guards-gallery__img-container">
+                  <picture>
+                    <source media="(min-width: 1280px)"
+                    srcset="img/guards-gallery-bartosh-desktop-02@1x.jpg">
+                    <img src="img/guards-gallery-bartosh-mobile-02@1x.jpg" alt="Галерея" width="275" height="189">
+                  </picture>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="guards-gallery__link-container2">
+            <a href="" class="guards-gallery__link  read-more-link">
+              Галерея
+            </a>
+          </div>
+        </article> -->
 
         <article class="map">
           <h2 class="map__title">Доїхати до нас</h2>
@@ -642,7 +741,8 @@
       $("#follow-us-sticky").stick_in_parent(
         {
           parent: '#sticky-wrapper',
-          offset_top: 20
+          offset_top: 20,
+          spacer: false
         }
       );
     });
