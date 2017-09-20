@@ -98,6 +98,28 @@
     }
   });
 
+  var swiperContent = new Swiper('.swiper-container-content', {
+    initialSlide: 0,
+    slidesPerView: 1,
+    spaceBetween: 205,
+    loop: true,
+    pagination: '.swiper-pagination',
+    paginationType: 'fraction',
+    /*effect: 'fade',*/
+    breakpoints: {
+      // when window width is <= 767px
+      767: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      1279: {
+        slidesPerView: 1,
+        spaceBetween: 25
+      }
+    }
+
+  });
+
   var swiperMain = new Swiper('.swiper-container-main', {
 
     initialSlide: 0,

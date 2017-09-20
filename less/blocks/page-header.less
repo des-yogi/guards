@@ -72,16 +72,10 @@
   height: 100%;
   object-fit: cover;
 
-  @media screen and @tablet-width {
+  @media @tablet-width {
     width: 100%;
     height: auto;
   }
-
-  @media screen and @desktop-width {
-    // height: 665px;
-    // height: auto;
-  }
-
 }
 
 .page-header__text-wrapper {
@@ -93,7 +87,7 @@
 .page-header__title {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -1px;
   // margin-bottom: 190px;
 
   a {
