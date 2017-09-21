@@ -113,12 +113,13 @@
     font-size: 16px;
     font-weight: 700;
     color: @text-color;
-    border-right: 2px solid #BEBDBD;
+    border-right: 1px solid #BEBDBD;
 
     @media screen and @tablet-width {
       padding-left: 240px;
       font-size: 20px;
       text-align: right;
+      border-right: 1.5px solid #BEBDBD;
     }
 
     @media screen and @desktop-width {
@@ -265,6 +266,8 @@
 }
 
 .guards-content__sibling-wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   @media @tablet-width {
     display: flex;
@@ -273,11 +276,14 @@
     align-content: flex-start;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 80px;
   }
 
   @media @desktop-width {
     padding-left: 190px;
     padding-right: 190px;
+    padding-top: 120px;
+    padding-bottom: 30px;
   }
 }
 
@@ -399,5 +405,13 @@
     padding-left: 170px;
     padding-right: 190px;
     font-size: 18px;
+  }
+}
+
+.guards-content__btn-nav {
+  display: none;
+
+  @media @desktop-width {
+    display: block;
   }
 }

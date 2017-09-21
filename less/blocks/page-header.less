@@ -53,24 +53,15 @@
   position: relative;
   min-height: 200px;
   overflow: hidden;
-
-  /* &::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(15deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0.1) 60%, transparent);
-  } */
-
 }
 
 .page-header__img {
   display: block;
   width: auto;
+  // max-width: none;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 
   @media @tablet-width {
     width: 100%;
@@ -88,15 +79,11 @@
   position: absolute;
   top: 0;
   left: -1px;
-  // margin-bottom: 190px;
-
-  a {
-    // display: block;
-  }
 
   img {
     display: block;
     width: 135px;
+    height: 61.4167px;
 
     @media screen and @desktop-width {
       width: 190px;

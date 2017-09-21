@@ -14,6 +14,7 @@ var svgmin = require("gulp-svgmin");
 var svgstore = require("gulp-svgstore");
 var uglify = require("gulp-uglify");
 var concat = require("gulp-concat");
+var objectFitImages = require('postcss-object-fit-images');
 var del = require("del");
 var runSeq = require("run-sequence");
 var server = require("browser-sync").create();
@@ -37,6 +38,7 @@ gulp.task("style", function() {
         "last 10 Opera versions",
         "last 10 Edge versions"
       ]}),
+      objectFitImages(),
       mqpacker({
         sort: true
       })

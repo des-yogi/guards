@@ -105,6 +105,8 @@
     loop: true,
     pagination: '.swiper-pagination',
     paginationType: 'fraction',
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
     /*effect: 'fade',*/
     breakpoints: {
       // when window width is <= 767px
@@ -244,3 +246,7 @@ window.utils = (function () {
   };
 
 })();
+
+window.addEventListener('DOMContentLoaded', function (e) {
+  objectFitImages();
+});
